@@ -282,3 +282,97 @@ Or, if you meant to create an async function, pass `async: true` as an option.
 pid: 6362
 hostname: lcss-MacBook-Pro.local
 
+2020-01-09 16:19:22,050 ERROR 7676 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: /Users/licaishi/Desktop/github/58fe.com/app/view/layout.html:153
+    151|         </div>
+    152| 
+ >> 153|         <% include ./_sponsors.html %>
+    154| 
+    155|       </div>
+    156|     </div>
+
+/Users/licaishi/Desktop/github/58fe.com/app/view/_sponsors.html:7
+    5|     <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jh5fwy2j" target="_blank"
+    6|       class="sponsor_outlink" data-label="aliyun">
+ >> 7|       <img src="<%- staticFile('/public/images/aliyun.png') %>" title="aliyun" alt="aliyun" />
+    8|     </a>
+    9|     ，存储赞助商为
+    10|     <a href="https://portal.qiniu.com/signup?code=1hjz770w7klle" target="_blank" class="sponsor_outlink"
+
+staticFile is not defined
+    151|         </div>
+    152| 
+ >> 153|         <% include ./_sponsors.html %>
+    154| 
+    155|       </div>
+    156|     </div>
+
+/Users/licaishi/Desktop/github/58fe.com/app/view/_sponsors.html:7
+    5|     <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jh5fwy2j" target="_blank"
+    6|       class="sponsor_outlink" data-label="aliyun">
+ >> 7|       <img src="<%- staticFile('/public/images/aliyun.png') %>" title="aliyun" alt="aliyun" />
+    8|     </a>
+    9|     ，存储赞助商为
+    10|     <a href="https://portal.qiniu.com/signup?code=1hjz770w7klle" target="_blank" class="sponsor_outlink"
+
+staticFile is not defined
+    at eval (/Users/licaishi/Desktop/github/58fe.com/app/view/layout.html:187:7)
+    at eval (/Users/licaishi/Desktop/github/58fe.com/app/view/layout.html:196:10)
+    at layout (/Users/licaishi/Desktop/github/58fe.com/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/licaishi/Desktop/github/58fe.com/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/licaishi/Desktop/github/58fe.com/node_modules/ejs/lib/ejs.js:485:10)
+    at Promise (/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/lib/view.js:16:11)
+    at new Promise (<anonymous>:null:null)
+    at EjsView.[EjsView#_render] (/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/lib/view.js:35:24)
+
+path: "/Users/licaishi/Desktop/github/58fe.com/app/view/layout.html"
+pid: 7676
+hostname: lcss-MacBook-Pro.local
+
+2020-01-09 16:19:29,783 ERROR 7676 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: /Users/licaishi/Desktop/github/58fe.com/app/view/layout.html:153
+    151|         </div>
+    152| 
+ >> 153|         <% include ./_sponsors.html %>
+    154| 
+    155|       </div>
+    156|     </div>
+
+/Users/licaishi/Desktop/github/58fe.com/app/view/_sponsors.html:7
+    5|     <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jh5fwy2j" target="_blank"
+    6|       class="sponsor_outlink" data-label="aliyun">
+ >> 7|       <img src="<%- staticFile('/public/images/aliyun.png') %>" title="aliyun" alt="aliyun" />
+    8|     </a>
+    9|     ，存储赞助商为
+    10|     <a href="https://portal.qiniu.com/signup?code=1hjz770w7klle" target="_blank" class="sponsor_outlink"
+
+staticFile is not defined
+    151|         </div>
+    152| 
+ >> 153|         <% include ./_sponsors.html %>
+    154| 
+    155|       </div>
+    156|     </div>
+
+/Users/licaishi/Desktop/github/58fe.com/app/view/_sponsors.html:7
+    5|     <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=jh5fwy2j" target="_blank"
+    6|       class="sponsor_outlink" data-label="aliyun">
+ >> 7|       <img src="<%- staticFile('/public/images/aliyun.png') %>" title="aliyun" alt="aliyun" />
+    8|     </a>
+    9|     ，存储赞助商为
+    10|     <a href="https://portal.qiniu.com/signup?code=1hjz770w7klle" target="_blank" class="sponsor_outlink"
+
+staticFile is not defined
+    at eval (/Users/licaishi/Desktop/github/58fe.com/app/view/layout.html:187:7)
+    at eval (/Users/licaishi/Desktop/github/58fe.com/app/view/layout.html:196:10)
+    at layout (/Users/licaishi/Desktop/github/58fe.com/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/Users/licaishi/Desktop/github/58fe.com/node_modules/ejs/lib/ejs.js:254:36)
+    at Object.exports.renderFile (/Users/licaishi/Desktop/github/58fe.com/node_modules/ejs/lib/ejs.js:485:10)
+    at Promise (/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/lib/view.js:16:11)
+    at new Promise (<anonymous>:null:null)
+    at EjsView.[EjsView#_render] (/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/lib/view.js:15:12)
+    at EjsView.render (/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/lib/view.js:35:24)
+
+path: "/Users/licaishi/Desktop/github/58fe.com/app/view/layout.html"
+pid: 7676
+hostname: lcss-MacBook-Pro.local
+

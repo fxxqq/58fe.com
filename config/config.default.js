@@ -4,13 +4,13 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  config.name = '58fe-国内领先的前端社区';
+  config.name = '前端社区';
 
-  config.description = '国内领先的前端社区-58fe.com';
+  config.description = '58fe.com,国内最专业的前端技术社区，致力于前端技术研究探讨。';
 
   config.site_logo = '';
 
-  config.site_icon = '/public/images/cnode_icon_32.png';
+  config.site_icon = '/public/images/58fe-ico.png';
 
   // debug 为 true 时，用于本地调试
   config.debug = true;
@@ -23,7 +23,7 @@ module.exports = appInfo => {
   config.session_secret = 'node_club_secret'; // 务必修改
 
   // add your config here
-  config.middleware = [ 'locals', 'authUser', 'blockUser', 'errorPage', 'errorHandler' ];
+  config.middleware = ['locals', 'authUser', 'blockUser', 'errorPage', 'errorHandler'];
 
   config.authUser = {
     enable: true,
@@ -39,16 +39,16 @@ module.exports = appInfo => {
   config.mini_assets = process.env.EGG_MINI_ASSETS || false;
 
   // 版块
-  config.tabs = [[ 'share', '分享' ], [ 'ask', '问答' ], [ 'job', '招聘' ]];
+  config.tabs = [['share', '分享'], ['ask', '问答'], ['job', '招聘']];
   // 版块
   config.fetabs = [
     {
       tab: 'index',
       name: '首页',
       labels: [
-        [ 'all', '全部' ],
-        [ 'excellent', '精华' ],
-        [ 'hot', '最近热门' ],
+        ['all', '全部'],
+        ['excellent', '精华'],
+        ['hot', '最近热门'],
         // ['',"猜你喜欢"]
       ],
     },
@@ -56,91 +56,91 @@ module.exports = appInfo => {
       tab: 'tech',
       name: '技术',
       labels: [
-        [ 'all', '全部' ],
-        [ 'excellent', '精华' ],
-        [ 'share', '技术分享' ],
-        [ 'interview', '面试分享' ],
-        [ 'vue', 'vue' ],
-        [ 'react', 'react' ],
-        [ 'node', 'node' ],
-        [ 'css', 'css' ],
-        [ 'js', 'javascript' ],
-        [ 'webpack', 'webpack' ],
-        [ 'other', '其他' ],
+        ['all', '全部'],
+        ['excellent', '精华'],
+        ['share', '技术分享'],
+        ['interview', '面试分享'],
+        ['vue', 'vue'],
+        ['react', 'react'],
+        ['node', 'node'],
+        ['css', 'css'],
+        ['js', 'javascript'],
+        ['webpack', 'webpack'],
+        ['other', '其他'],
       ],
     },
     {
       tab: 'circle',
       name: '圈子',
       labels: [
-        [ 'all', '全部' ],
-        [ 'excellent', '精华' ],
-        [ 'infer', '交友相亲' ],
-        [ 'free-time', '摸鱼划水' ],
-        [ 'post-part-time', '发布兼职' ],
-        [ 'seeking-part-time', '寻求兼职' ],
+        ['all', '全部'],
+        ['excellent', '精华'],
+        ['infer', '交友相亲'],
+        ['free-time', '摸鱼划水'],
+        ['post-part-time', '发布兼职'],
+        ['seeking-part-time', '寻求兼职'],
       ],
     },
     {
       tab: 'ask',
       name: '问答',
       labels: [
-        [ 'all', '全部' ],
-        [ 'unsolved', '未解决' ],
-        [ 'solved', '已解决' ],
-        [ 'excellent', '精华' ],
+        ['all', '全部'],
+        ['unsolved', '未解决'],
+        ['solved', '已解决'],
+        ['excellent', '精华'],
       ],
     },
     {
       tab: 'job',
       name: '内推',
       labels: [
-        [ 'all', '全部' ],
-        [ 'infer', '内推' ],
-        [ 'apply-job', '求职' ],
-        [ 'bj', '北京' ],
-        [ 'sh', '上海' ],
-        [ 'sz', '深圳' ],
-        [ 'gz', '广州' ],
-        [ 'hz', '杭州' ],
-        [ 'other-city', '其他城市' ],
-        [ 'overseas', '海外' ],
+        ['all', '全部'],
+        ['infer', '内推'],
+        ['apply-job', '求职'],
+        ['bj', '北京'],
+        ['sh', '上海'],
+        ['sz', '深圳'],
+        ['gz', '广州'],
+        ['hz', '杭州'],
+        ['other-city', '其他城市'],
+        ['overseas', '海外'],
       ],
     },
     {
       tab: 'more',
       name: '更多',
       labels: [
-        [ 'promote', '推广' ],
-        [ 'suggest', '建议意见' ],
-        [ 'bug-feedback', 'bug反馈' ],
-        [ 'dev', '测试' ],
+        ['promote', '推广'],
+        ['suggest', '建议意见'],
+        ['bug-feedback', 'bug反馈'],
+        ['dev', '测试'],
       ],
     },
 
   ],
 
-  // RSS配置
-  config.rss = {
-    title: 'CNode：Node.js专业中文社区',
-    link: 'http://cnodejs.org',
-    language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
-    // 最多获取的RSS Item数量
-    max_rss_items: 50,
-  };
+    // RSS配置
+    config.rss = {
+      title: '国内领先的前端社区-58fe.com,',
+      link: 'https://58fe.com',
+      language: 'zh-cn',
+      description: '58fe.com,国内最专业的前端技术社区，致力于前端技术研究探讨。',
+      // 最多获取的RSS Item数量
+      max_rss_items: 50,
+    };
 
   // 下面两个配置都是文件上传的配置
 
   // 7牛的access信息，用于文件上传
   config.qn_access = {
-    accessKey: 'your access key',
-    secretKey: 'your secret key',
-    bucket: 'your bucket name',
-    origin: 'http://your qiniu domain',
+    accessKey: "HCct3FpW17hnRMdsSCnogNeqtklD5nIiUa9hOrvi",
+    secretKey: "7Pp2QhmgJo0SdwpKCiuq5M1VMFHbZNj68mjLBwRz",
+    bucket: "cdn58fe",
+    origin: "cdn.58fe.com",
     // 如果vps在国外，请使用 http://up.qiniug.com/ ，这是七牛的国际节点
     // 如果在国内，此项请留空
-    uploadURL: 'http://xxxxxxxx',
+    uploadURL: ""
   };
 
   // 文件上传配置
@@ -177,7 +177,7 @@ module.exports = appInfo => {
   };
 
   config.siteFile = {
-    '/favicon.ico': '/public/images/cnode_icon_32.png',
+    '/favicon.ico': '/public/images/58fe-ico.png',
   };
 
   // database
@@ -215,13 +215,13 @@ module.exports = appInfo => {
 
   // 邮箱配置
   config.mail_opts = {
-    host: 'smtp.126.com',
-    port: 25,
+    host: "smtp.qq.com",
+    port: 465,
     auth: {
-      user: 'club@126.com',
-      pass: 'club',
+      user: "694372017@qq.com",
+      pass: "azgorapfpyfdbbec"
     },
-    ignoreTLS: true,
+    ignoreTLS: true
   };
 
   config.alinode = {

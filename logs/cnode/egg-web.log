@@ -1223,3 +1223,255 @@ hostname: lcss-MacBook-Pro.local
 2020-01-09 15:40:34,683 INFO 6387 [egg-redis] instance[0] status OK, client ready
 2020-01-09 15:40:34,697 INFO 6387 [egg-watcher:application] watcher start success
 2020-01-09 15:40:34,712 INFO 6387 [egg:core] dump config after ready, 10ms
+2020-01-09 15:51:09,645 INFO 7020 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 15:51:09,675 INFO 7020 [egg-multipart] stream mode enable
+2020-01-09 15:51:09,722 INFO 7020 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 15:51:10,032 INFO 7020 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 15:51:10,812 INFO 7020 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 15:51:10,824 INFO 7020 [egg-security] use csrf middleware
+2020-01-09 15:51:10,825 INFO 7020 [egg-security] use methodnoallow middleware
+2020-01-09 15:51:10,826 INFO 7020 [egg-security] use noopen middleware
+2020-01-09 15:51:10,826 INFO 7020 [egg-security] use nosniff middleware
+2020-01-09 15:51:10,827 INFO 7020 [egg-security] use xssProtection middleware
+2020-01-09 15:51:10,827 INFO 7020 [egg-security] use xframe middleware
+2020-01-09 15:51:10,828 INFO 7020 [egg-security] use dta middleware
+2020-01-09 15:51:10,828 INFO 7020 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 15:51:10,918 INFO 7020 [egg:core] dump config after load, 7ms
+2020-01-09 15:51:10,922 INFO 7020 [egg-mongoose] starting...
+2020-01-09 15:51:10,965 INFO 7020 [egg-redis] client connect success
+2020-01-09 15:51:10,992 INFO 7020 [egg-watcher:application] watcher start success
+2020-01-09 15:51:10,997 INFO 7020 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 15:51:10,998 INFO 7020 [egg-mongoose] instance[0] start successfully
+2020-01-09 15:51:11,005 INFO 7020 [egg-redis] instance[0] status OK, client ready
+2020-01-09 15:51:11,036 INFO 7020 [egg:core] dump config after ready, 9ms
+2020-01-09 15:56:58,136 INFO 7157 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 15:56:58,182 INFO 7157 [egg-multipart] stream mode enable
+2020-01-09 15:56:58,243 INFO 7157 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 15:56:58,601 INFO 7157 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 15:56:59,517 INFO 7157 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 15:56:59,527 INFO 7157 [egg-security] use csrf middleware
+2020-01-09 15:56:59,528 INFO 7157 [egg-security] use methodnoallow middleware
+2020-01-09 15:56:59,529 INFO 7157 [egg-security] use noopen middleware
+2020-01-09 15:56:59,530 INFO 7157 [egg-security] use nosniff middleware
+2020-01-09 15:56:59,530 INFO 7157 [egg-security] use xssProtection middleware
+2020-01-09 15:56:59,531 INFO 7157 [egg-security] use xframe middleware
+2020-01-09 15:56:59,532 INFO 7157 [egg-security] use dta middleware
+2020-01-09 15:56:59,532 INFO 7157 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 15:56:59,611 INFO 7157 [egg:core] dump config after load, 7ms
+2020-01-09 15:56:59,616 INFO 7157 [egg-mongoose] starting...
+2020-01-09 15:56:59,670 INFO 7157 [egg-redis] client connect success
+2020-01-09 15:56:59,685 INFO 7157 [egg-watcher:application] watcher start success
+2020-01-09 15:56:59,703 INFO 7157 [egg-redis] instance[0] status OK, client ready
+2020-01-09 15:56:59,707 INFO 7157 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 15:56:59,709 INFO 7157 [egg-mongoose] instance[0] start successfully
+2020-01-09 15:56:59,730 INFO 7157 [egg:core] dump config after ready, 11ms
+2020-01-09 15:57:37,265 INFO 7184 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 15:57:37,300 INFO 7184 [egg-multipart] stream mode enable
+2020-01-09 15:57:37,375 INFO 7184 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 15:57:37,736 INFO 7184 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 15:57:38,541 INFO 7184 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 15:57:38,544 INFO 7184 [egg-security] use csrf middleware
+2020-01-09 15:57:38,548 INFO 7184 [egg-security] use methodnoallow middleware
+2020-01-09 15:57:38,549 INFO 7184 [egg-security] use noopen middleware
+2020-01-09 15:57:38,550 INFO 7184 [egg-security] use nosniff middleware
+2020-01-09 15:57:38,550 INFO 7184 [egg-security] use xssProtection middleware
+2020-01-09 15:57:38,551 INFO 7184 [egg-security] use xframe middleware
+2020-01-09 15:57:38,552 INFO 7184 [egg-security] use dta middleware
+2020-01-09 15:57:38,552 INFO 7184 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 15:57:38,622 INFO 7184 [egg:core] dump config after load, 6ms
+2020-01-09 15:57:38,626 INFO 7184 [egg-mongoose] starting...
+2020-01-09 15:57:38,674 INFO 7184 [egg-redis] client connect success
+2020-01-09 15:57:38,683 INFO 7184 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 15:57:38,684 INFO 7184 [egg-mongoose] instance[0] start successfully
+2020-01-09 15:57:38,686 INFO 7184 [egg-redis] instance[0] status OK, client ready
+2020-01-09 15:57:38,697 INFO 7184 [egg-watcher:application] watcher start success
+2020-01-09 15:57:38,710 INFO 7184 [egg:core] dump config after ready, 8ms
+2020-01-09 15:57:39,772 INFO 7194 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 15:57:39,815 INFO 7194 [egg-multipart] stream mode enable
+2020-01-09 15:57:39,863 INFO 7194 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 15:57:40,127 INFO 7194 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 15:57:40,620 INFO 7194 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 15:57:40,630 INFO 7194 [egg-security] use csrf middleware
+2020-01-09 15:57:40,631 INFO 7194 [egg-security] use methodnoallow middleware
+2020-01-09 15:57:40,632 INFO 7194 [egg-security] use noopen middleware
+2020-01-09 15:57:40,633 INFO 7194 [egg-security] use nosniff middleware
+2020-01-09 15:57:40,634 INFO 7194 [egg-security] use xssProtection middleware
+2020-01-09 15:57:40,634 INFO 7194 [egg-security] use xframe middleware
+2020-01-09 15:57:40,635 INFO 7194 [egg-security] use dta middleware
+2020-01-09 15:57:40,635 INFO 7194 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 15:57:40,790 INFO 7194 [egg:core] dump config after load, 8ms
+2020-01-09 15:57:40,794 INFO 7194 [egg-mongoose] starting...
+2020-01-09 15:57:40,841 INFO 7194 [egg-redis] client connect success
+2020-01-09 15:57:40,853 INFO 7194 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 15:57:40,856 INFO 7194 [egg-mongoose] instance[0] start successfully
+2020-01-09 15:57:40,858 INFO 7194 [egg-redis] instance[0] status OK, client ready
+2020-01-09 15:57:40,874 INFO 7194 [egg-watcher:application] watcher start success
+2020-01-09 15:57:40,892 INFO 7194 [egg:core] dump config after ready, 12ms
+2020-01-09 16:00:11,608 INFO 7286 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:00:11,647 INFO 7286 [egg-multipart] stream mode enable
+2020-01-09 16:00:11,692 INFO 7286 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:00:12,054 INFO 7286 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:00:12,842 INFO 7286 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:00:12,849 INFO 7286 [egg-security] use csrf middleware
+2020-01-09 16:00:12,850 INFO 7286 [egg-security] use methodnoallow middleware
+2020-01-09 16:00:12,850 INFO 7286 [egg-security] use noopen middleware
+2020-01-09 16:00:12,851 INFO 7286 [egg-security] use nosniff middleware
+2020-01-09 16:00:12,851 INFO 7286 [egg-security] use xssProtection middleware
+2020-01-09 16:00:12,852 INFO 7286 [egg-security] use xframe middleware
+2020-01-09 16:00:12,853 INFO 7286 [egg-security] use dta middleware
+2020-01-09 16:00:12,853 INFO 7286 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:00:12,925 INFO 7286 [egg:core] dump config after load, 8ms
+2020-01-09 16:00:12,928 INFO 7286 [egg-mongoose] starting...
+2020-01-09 16:00:12,967 INFO 7286 [egg-redis] client connect success
+2020-01-09 16:00:12,985 INFO 7286 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:00:12,987 INFO 7286 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:00:12,988 INFO 7286 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:00:13,001 INFO 7286 [egg-watcher:application] watcher start success
+2020-01-09 16:00:13,027 INFO 7286 [egg:core] dump config after ready, 11ms
+2020-01-09 16:00:19,707 INFO 7314 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:00:19,739 INFO 7314 [egg-multipart] stream mode enable
+2020-01-09 16:00:19,769 INFO 7314 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:00:19,964 INFO 7314 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:00:20,758 INFO 7314 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:00:20,764 INFO 7314 [egg-security] use csrf middleware
+2020-01-09 16:00:20,765 INFO 7314 [egg-security] use methodnoallow middleware
+2020-01-09 16:00:20,766 INFO 7314 [egg-security] use noopen middleware
+2020-01-09 16:00:20,767 INFO 7314 [egg-security] use nosniff middleware
+2020-01-09 16:00:20,768 INFO 7314 [egg-security] use xssProtection middleware
+2020-01-09 16:00:20,769 INFO 7314 [egg-security] use xframe middleware
+2020-01-09 16:00:20,770 INFO 7314 [egg-security] use dta middleware
+2020-01-09 16:00:20,770 INFO 7314 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:00:20,843 INFO 7314 [egg:core] dump config after load, 7ms
+2020-01-09 16:00:20,847 INFO 7314 [egg-mongoose] starting...
+2020-01-09 16:00:20,884 INFO 7314 [egg-redis] client connect success
+2020-01-09 16:00:20,913 INFO 7314 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:00:20,916 INFO 7314 [egg-watcher:application] watcher start success
+2020-01-09 16:00:20,921 INFO 7314 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:00:20,922 INFO 7314 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:00:20,942 INFO 7314 [egg:core] dump config after ready, 10ms
+2020-01-09 16:01:13,664 INFO 7339 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:01:13,696 INFO 7339 [egg-multipart] stream mode enable
+2020-01-09 16:01:13,735 INFO 7339 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:01:14,005 INFO 7339 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:01:14,949 INFO 7339 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:01:14,959 INFO 7339 [egg-security] use csrf middleware
+2020-01-09 16:01:14,960 INFO 7339 [egg-security] use methodnoallow middleware
+2020-01-09 16:01:14,961 INFO 7339 [egg-security] use noopen middleware
+2020-01-09 16:01:14,962 INFO 7339 [egg-security] use nosniff middleware
+2020-01-09 16:01:14,964 INFO 7339 [egg-security] use xssProtection middleware
+2020-01-09 16:01:14,967 INFO 7339 [egg-security] use xframe middleware
+2020-01-09 16:01:14,968 INFO 7339 [egg-security] use dta middleware
+2020-01-09 16:01:14,968 INFO 7339 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:01:15,061 INFO 7339 [egg:core] dump config after load, 10ms
+2020-01-09 16:01:15,067 INFO 7339 [egg-mongoose] starting...
+2020-01-09 16:01:15,105 INFO 7339 [egg-redis] client connect success
+2020-01-09 16:01:15,120 INFO 7339 [egg-watcher:application] watcher start success
+2020-01-09 16:01:15,126 INFO 7339 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:01:15,153 INFO 7339 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:01:15,155 INFO 7339 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:01:15,173 INFO 7339 [egg:core] dump config after ready, 8ms
+2020-01-09 16:01:40,452 INFO 7377 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:01:40,490 INFO 7377 [egg-multipart] stream mode enable
+2020-01-09 16:01:40,541 INFO 7377 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:01:40,840 INFO 7377 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:01:41,600 INFO 7377 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:01:41,607 INFO 7377 [egg-security] use csrf middleware
+2020-01-09 16:01:41,607 INFO 7377 [egg-security] use methodnoallow middleware
+2020-01-09 16:01:41,608 INFO 7377 [egg-security] use noopen middleware
+2020-01-09 16:01:41,609 INFO 7377 [egg-security] use nosniff middleware
+2020-01-09 16:01:41,610 INFO 7377 [egg-security] use xssProtection middleware
+2020-01-09 16:01:41,610 INFO 7377 [egg-security] use xframe middleware
+2020-01-09 16:01:41,611 INFO 7377 [egg-security] use dta middleware
+2020-01-09 16:01:41,611 INFO 7377 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:01:41,679 INFO 7377 [egg:core] dump config after load, 7ms
+2020-01-09 16:01:41,682 INFO 7377 [egg-mongoose] starting...
+2020-01-09 16:01:41,716 INFO 7377 [egg-redis] client connect success
+2020-01-09 16:01:41,728 INFO 7377 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:01:41,731 INFO 7377 [egg-watcher:application] watcher start success
+2020-01-09 16:01:41,770 INFO 7377 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:01:41,771 INFO 7377 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:01:41,787 INFO 7377 [egg:core] dump config after ready, 6ms
+2020-01-09 16:02:21,708 INFO 7404 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:02:21,743 INFO 7404 [egg-multipart] stream mode enable
+2020-01-09 16:02:21,794 INFO 7404 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:02:22,229 INFO 7404 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:02:23,088 INFO 7404 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:02:23,095 INFO 7404 [egg-security] use csrf middleware
+2020-01-09 16:02:23,096 INFO 7404 [egg-security] use methodnoallow middleware
+2020-01-09 16:02:23,096 INFO 7404 [egg-security] use noopen middleware
+2020-01-09 16:02:23,097 INFO 7404 [egg-security] use nosniff middleware
+2020-01-09 16:02:23,097 INFO 7404 [egg-security] use xssProtection middleware
+2020-01-09 16:02:23,098 INFO 7404 [egg-security] use xframe middleware
+2020-01-09 16:02:23,099 INFO 7404 [egg-security] use dta middleware
+2020-01-09 16:02:23,099 INFO 7404 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:02:23,175 INFO 7404 [egg:core] dump config after load, 7ms
+2020-01-09 16:02:23,183 INFO 7404 [egg-mongoose] starting...
+2020-01-09 16:02:23,224 INFO 7404 [egg-redis] client connect success
+2020-01-09 16:02:23,233 INFO 7404 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:02:23,238 INFO 7404 [egg-watcher:application] watcher start success
+2020-01-09 16:02:23,245 INFO 7404 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:02:23,246 INFO 7404 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:02:23,275 INFO 7404 [egg:core] dump config after ready, 9ms
+2020-01-09 16:03:49,188 INFO 7434 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:03:49,224 INFO 7434 [egg-multipart] stream mode enable
+2020-01-09 16:03:49,273 INFO 7434 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:03:49,587 INFO 7434 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:03:50,332 INFO 7434 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:03:50,339 INFO 7434 [egg-security] use csrf middleware
+2020-01-09 16:03:50,340 INFO 7434 [egg-security] use methodnoallow middleware
+2020-01-09 16:03:50,340 INFO 7434 [egg-security] use noopen middleware
+2020-01-09 16:03:50,341 INFO 7434 [egg-security] use nosniff middleware
+2020-01-09 16:03:50,342 INFO 7434 [egg-security] use xssProtection middleware
+2020-01-09 16:03:50,342 INFO 7434 [egg-security] use xframe middleware
+2020-01-09 16:03:50,343 INFO 7434 [egg-security] use dta middleware
+2020-01-09 16:03:50,343 INFO 7434 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:03:50,413 INFO 7434 [egg:core] dump config after load, 6ms
+2020-01-09 16:03:50,417 INFO 7434 [egg-mongoose] starting...
+2020-01-09 16:03:50,451 INFO 7434 [egg-redis] client connect success
+2020-01-09 16:03:50,460 INFO 7434 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:03:50,464 INFO 7434 [egg-watcher:application] watcher start success
+2020-01-09 16:03:50,505 INFO 7434 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:03:50,506 INFO 7434 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:03:50,522 INFO 7434 [egg:core] dump config after ready, 7ms
+2020-01-09 16:13:42,837 INFO 7614 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:13:42,880 INFO 7614 [egg-multipart] stream mode enable
+2020-01-09 16:13:42,941 INFO 7614 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:13:43,302 INFO 7614 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:13:44,101 INFO 7614 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:13:44,105 INFO 7614 [egg-security] use csrf middleware
+2020-01-09 16:13:44,108 INFO 7614 [egg-security] use methodnoallow middleware
+2020-01-09 16:13:44,109 INFO 7614 [egg-security] use noopen middleware
+2020-01-09 16:13:44,110 INFO 7614 [egg-security] use nosniff middleware
+2020-01-09 16:13:44,110 INFO 7614 [egg-security] use xssProtection middleware
+2020-01-09 16:13:44,111 INFO 7614 [egg-security] use xframe middleware
+2020-01-09 16:13:44,111 INFO 7614 [egg-security] use dta middleware
+2020-01-09 16:13:44,111 INFO 7614 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:13:44,181 INFO 7614 [egg:core] dump config after load, 7ms
+2020-01-09 16:13:44,184 INFO 7614 [egg-mongoose] starting...
+2020-01-09 16:13:44,216 INFO 7614 [egg-redis] client connect success
+2020-01-09 16:13:44,228 INFO 7614 [egg-watcher:application] watcher start success
+2020-01-09 16:13:44,233 INFO 7614 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:13:44,234 INFO 7614 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:13:44,269 INFO 7614 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:13:44,278 INFO 7614 [egg:core] dump config after ready, 7ms
+2020-01-09 16:14:59,431 INFO 7676 [egg:logger] init all loggers with options: {"dir":"/Users/licaishi/Desktop/github/58fe.com/logs/cnode","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cnode-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-09 16:14:59,467 INFO 7676 [egg-multipart] stream mode enable
+2020-01-09 16:14:59,524 INFO 7676 [egg-redis] server connecting redis://:***@127.0.0.1:6379/0
+2020-01-09 16:14:59,833 INFO 7676 [egg-mongoose] connecting mongodb://127.0.0.1:27017/egg_cnode
+2020-01-09 16:15:00,648 INFO 7676 [egg-static] starting static serve /public/ -> /Users/licaishi/Desktop/github/58fe.com/app/public
+2020-01-09 16:15:00,656 INFO 7676 [egg-security] use csrf middleware
+2020-01-09 16:15:00,658 INFO 7676 [egg-security] use methodnoallow middleware
+2020-01-09 16:15:00,659 INFO 7676 [egg-security] use noopen middleware
+2020-01-09 16:15:00,660 INFO 7676 [egg-security] use nosniff middleware
+2020-01-09 16:15:00,660 INFO 7676 [egg-security] use xssProtection middleware
+2020-01-09 16:15:00,661 INFO 7676 [egg-security] use xframe middleware
+2020-01-09 16:15:00,662 INFO 7676 [egg-security] use dta middleware
+2020-01-09 16:15:00,662 INFO 7676 [egg-security] compose 7 middlewares into one security middleware
+2020-01-09 16:15:00,737 INFO 7676 [egg:core] dump config after load, 7ms
+2020-01-09 16:15:00,740 INFO 7676 [egg-mongoose] starting...
+2020-01-09 16:15:00,781 INFO 7676 [egg-redis] client connect success
+2020-01-09 16:15:00,791 INFO 7676 [egg-redis] instance[0] status OK, client ready
+2020-01-09 16:15:00,801 INFO 7676 [egg-mongoose] mongodb://127.0.0.1:27017/egg_cnode connected successfully
+2020-01-09 16:15:00,802 INFO 7676 [egg-mongoose] instance[0] start successfully
+2020-01-09 16:15:00,805 INFO 7676 [egg-watcher:application] watcher start success
+2020-01-09 16:15:00,829 INFO 7676 [egg:core] dump config after ready, 10ms

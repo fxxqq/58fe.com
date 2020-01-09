@@ -1,424 +1,424 @@
 {
-  "name": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "description": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "site_logo": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "site_icon": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "debug": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "keys": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "host": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "session_secret": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "middleware": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+  "name": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "description": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "site_logo": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "site_icon": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "debug": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "keys": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "host": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "session_secret": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "middleware": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
   "authUser": {
-    "enable": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "match": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "enable": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "match": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
-  "allow_sign_up": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "site_static_host": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "mini_assets": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "tabs": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "fetabs": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+  "allow_sign_up": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "site_static_host": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "mini_assets": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "tabs": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "fetabs": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
   "rss": {
-    "title": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "link": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "language": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "description": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "max_rss_items": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "title": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "link": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "language": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "description": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "max_rss_items": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "qn_access": {
-    "accessKey": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "secretKey": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "bucket": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "origin": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "uploadURL": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "accessKey": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "secretKey": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "bucket": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "origin": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "uploadURL": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "upload": {
-    "path": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "url": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "path": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "url": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "view": {
-    "defaultViewEngine": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+    "defaultViewEngine": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
     "mapping": {
-      ".html": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+      ".html": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
     },
-    "root": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view/config/config.local.js",
-    "defaultExtension": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view/config/config.default.js"
+    "root": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view/config/config.default.js"
   },
   "ejs": {
-    "layout": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "root": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/config.default.js",
-    "cache": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/config.local.js",
-    "debug": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/config.default.js",
-    "compileDebug": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/config.default.js",
-    "delimiter": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/config.default.js",
-    "strict": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/config.default.js"
+    "layout": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "root": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/config/config.default.js",
+    "cache": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/config/config.local.js",
+    "debug": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/config/config.default.js",
+    "compileDebug": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/config/config.default.js",
+    "delimiter": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/config/config.default.js",
+    "strict": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/config/config.default.js"
   },
-  "avatars_allow_hostname": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "auth_cookie_name": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+  "avatars_allow_hostname": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "auth_cookie_name": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
   "admins": {
-    "ADMIN_USER": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "ADMIN_USER": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "/favicon.ico": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "redis": {
     "client": {
-      "host": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-      "port": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-      "password": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-      "db": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+      "host": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+      "port": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+      "password": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+      "db": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
     },
-    "default": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis/config/config.default.js",
-    "app": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis/config/config.default.js",
-    "agent": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis/config/config.default.js",
-    "supportTimeCommand": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis/config/config.default.js"
+    "default": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-redis/config/config.default.js",
+    "app": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-redis/config/config.default.js",
+    "agent": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-redis/config/config.default.js",
+    "supportTimeCommand": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-redis/config/config.default.js"
   },
   "mongoose": {
-    "url": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+    "url": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
     "options": {
       "server": {
-        "poolSize": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+        "poolSize": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
       },
-      "reconnectTries": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-      "reconnectInterval": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+      "reconnectTries": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+      "reconnectInterval": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
     },
-    "loadModel": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-mongoose/config/config.default.js",
-    "app": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-mongoose/config/config.default.js",
-    "agent": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-mongoose/config/config.default.js"
+    "loadModel": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-mongoose/config/config.default.js"
   },
   "passportGithub": {
-    "key": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "secret": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "callbackURL": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-github/config/config.default.js"
+    "key": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "secret": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "callbackURL": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-github/config/config.default.js"
   },
   "passportLocal": {
-    "usernameField": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "passwordField": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "usernameField": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "passwordField": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "mail_opts": {
-    "host": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "port": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+    "host": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "port": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
     "auth": {
-      "user": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-      "pass": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+      "user": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+      "pass": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
     },
-    "ignoreTLS": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "ignoreTLS": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "alinode": {
-    "appid": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-    "secret": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "appid": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+    "secret": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
   "topic": {
-    "perDayPerUserLimitCount": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js"
+    "perDayPerUserLimitCount": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js"
   },
-  "list_topic_count": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "create_user_per_ip": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "search": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+  "list_topic_count": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "create_user_per_ip": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "search": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
   "security": {
     "csrf": {
-      "ignore": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "type": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "ignoreJSON": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "useSession": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "cookieName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "sessionName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "headerName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "bodyName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "refererWhiteList": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "ignore": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
-    "domainWhiteList": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
+    "domainWhiteList": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
     "xframe": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.local.js",
-      "maxAge": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "includeSubdomains": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "policy": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js",
-      "checkAddress": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+      "ipBlackList": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
     }
   },
-  "default_page": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
-  "default_limit": "/Users/licaishi/Desktop/github/egg-cnode/config/config.default.js",
+  "default_page": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
+  "default_limit": "/Users/licaishi/Desktop/github/58fe.com/config/config.default.js",
   "session": {
-    "maxAge": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session/config/config.default.js"
+    "maxAge": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/config.default.js"
+    "shtml": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-jsonp/config/config.default.js",
-    "callback": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-jsonp/config/config.default.js",
-    "csrf": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-jsonp/config/config.default.js"
+    "limit": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror/config/config.default.js",
-    "templatePath": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror/config/config.default.js"
+    "errorPageUrl": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/config.default.js",
-    "dirs": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/config.default.js",
-    "queryField": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/config.default.js",
-    "cookieField": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/config.default.js",
-    "cookieDomain": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/config.default.js",
-    "cookieMaxAge": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/config.default.js"
+    "defaultLocale": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/config/config.local.js",
+    "type": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
-      "default": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/config/config.default.js",
-      "development": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/config/config.default.js"
+      "default": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-schedule/config/config.default.js",
-      "file": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-schedule/config/config.default.js"
+      "consoleLevel": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-schedule/config/config.default.js"
+    "directory": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "autoFields": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "fields": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "fileSize": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "files": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "whitelist": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js",
+    "mode": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/config.default.js"
+      "cron": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "development": {
-    "watchDirs": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development/config/config.default.js",
-    "fastReady": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development/config/config.default.js",
-    "overrideDefault": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development/config/config.default.js"
+    "watchDirs": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development/config/config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/config.default.js",
-    "hourDelimiter": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/config.default.js",
-    "filesRotateBySize": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/config.default.js",
-    "maxFileSize": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/config.default.js",
-    "maxFiles": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/config.default.js",
-    "rotateDuration": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/config.default.js",
-    "maxDays": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/config.default.js"
+    "filesRotateByHour": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/config.default.js"
   },
   "static": {
-    "prefix": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/config.default.js",
-    "dir": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/config.default.js",
-    "dynamic": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/config.default.js",
-    "preload": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/config.default.js",
-    "maxFiles": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/config.default.js"
+    "prefix": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/config.default.js"
   },
-  "env": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "cookies": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "proxy": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "maxIpsCount": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "maxProxyCount": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "protocolHeaders": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "ipHeaders": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "hostHeaders": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
+  "env": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "version": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "description": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "private": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
+    "name": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "version": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "description": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "private": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
     "dependencies": {
-      "await-stream-ready": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "bcryptjs": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "data2xml": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-alinode": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-mongoose": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-passport": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-passport-github": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-passport-local": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-redis": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-router-plus": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-validate": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-view-ejs": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "loader": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "loader-builder": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "loader-koa": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "lodash": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "markdown-it": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "nodemailer": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "nodemailer-smtp-transport": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "qiniu": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "stream-wormhole": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "uuid": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "validator": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "xmlbuilder": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "await-stream-ready": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "bcryptjs": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "data2xml": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-alinode": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-mongoose": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-passport": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-passport-github": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-passport-local": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-redis": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-router-plus": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-view-ejs": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "loader": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "loader-builder": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "loader-koa": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "lodash": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "markdown-it": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "nodemailer": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "nodemailer-smtp-transport": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "qiniu": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "stream-wormhole": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "uuid": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "validator": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "xmlbuilder": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "autod": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "autod-egg": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-bin": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-ci": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "egg-mock": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "eslint": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "eslint-config-egg": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "webstorm-disable-index": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "autod": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "webstorm-disable-index": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
     "engines": {
-      "node": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "node": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "start": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "stop": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "restart": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "docker": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "dev": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "debug": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "test": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "test-local": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "cov": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "lint": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "ci": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "autod": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "assets": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "start": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "stop": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "restart": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "docker": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "dev": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "debug": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "test": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "cov": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "lint": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "ci": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "autod": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "assets": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
     "ci": {
-      "version": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "services": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "version": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "services": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
     "repository": {
-      "type": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "url": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "type": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "url": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
-    "author": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "license": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "author": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "license": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
-  "baseDir": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "HOME": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "rundir": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
+  "baseDir": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "ignore": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "notFound": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "sitefile": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "middlewares": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "httpClient": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "bodyparser": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "pageUrl": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "formLimit": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "jsonLimit": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "textLimit": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "strict": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
+    "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "strict": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "depth": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "parameterLimit": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "arrayLimit": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "depth": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
-    "onerror": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "onerror": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "env": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "level": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "consoleLevel": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "disableConsoleAfterReady": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "outputJSON": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "buffer": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "appLogName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "coreLogName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "agentLogName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "errorLogName": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
+    "dir": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "env": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "level": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
     "coreLogger": {
-      "consoleLevel": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.local.js"
+      "consoleLevel": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.local.js"
     },
-    "allowDebugAtProd": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "allowDebugAtProd": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "dnsCacheLookupInterval": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "dnsCacheMaxLength": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
+    "enableDNSCache": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "timeout": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     }
   },
   "meta": {
-    "enable": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "logging": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "enable": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "logging": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "workerStartTimeout": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-  "serverTimeout": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
+  "coreMiddleware": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "port": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-      "hostname": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "port": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js",
-    "responseTimeout": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+    "maxWaitTime": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/config.default.js"
+  "onClientError": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/config.default.js"
 }

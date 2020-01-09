@@ -205,3 +205,45 @@
 2020-01-09 15:40:33,329 INFO 6387 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
 2020-01-09 15:40:33,329 INFO 6387 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/app/schedule/clean_log.js
 2020-01-09 15:40:33,329 INFO 6387 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 15:51:09,674 INFO 7020 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 15:51:09,674 INFO 7020 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 15:51:09,674 INFO 7020 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 15:51:11,049 INFO 7016 [Timer] /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 45528957ms at 2020-01-10 04:30:00.005
+2020-01-09 15:51:11,050 INFO 7016 [Timer] /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 29328950ms at 2020-01-10 00:00:00.000
+2020-01-09 15:51:11,052 INFO 7016 [Timer] /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 29329950ms at 2020-01-10 00:00:01.002
+2020-01-09 15:56:58,181 INFO 7157 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 15:56:58,181 INFO 7157 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 15:56:58,181 INFO 7157 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 15:57:37,299 INFO 7184 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 15:57:37,299 INFO 7184 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 15:57:37,299 INFO 7184 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 15:57:39,815 INFO 7194 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 15:57:39,815 INFO 7194 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 15:57:39,815 INFO 7194 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:00:11,646 INFO 7286 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:00:11,646 INFO 7286 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:00:11,646 INFO 7286 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:00:19,739 INFO 7314 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:00:19,739 INFO 7314 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:00:19,739 INFO 7314 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:00:20,954 INFO 7310 [Timer] /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 44979052ms at 2020-01-10 04:30:00.006
+2020-01-09 16:00:20,955 INFO 7310 [Timer] /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 28779045ms at 2020-01-10 00:00:00.000
+2020-01-09 16:00:20,956 INFO 7310 [Timer] /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 28780045ms at 2020-01-10 00:00:01.001
+2020-01-09 16:01:13,695 INFO 7339 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:01:13,695 INFO 7339 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:01:13,695 INFO 7339 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:01:40,489 INFO 7377 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:01:40,489 INFO 7377 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:01:40,489 INFO 7377 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:02:21,742 INFO 7404 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:02:21,742 INFO 7404 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:02:21,742 INFO 7404 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:03:49,219 INFO 7434 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:03:49,219 INFO 7434 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:03:49,219 INFO 7434 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:13:42,880 INFO 7614 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:13:42,880 INFO 7614 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:13:42,880 INFO 7614 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-09 16:14:59,466 INFO 7676 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-09 16:14:59,466 INFO 7676 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-09 16:14:59,466 INFO 7676 [egg-schedule]: register schedule /Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

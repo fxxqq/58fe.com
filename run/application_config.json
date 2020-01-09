@@ -89,33 +89,33 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-jsonp/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-schedule/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-mongoose/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-github/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-local/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-validate/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-router-plus/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/locales",
-        "/Users/licaishi/Desktop/github/egg-cnode/config/locales"
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-session/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-jsonp/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-onerror/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-schedule/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-redis/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-mongoose/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-github/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-local/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-validate/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-router-plus/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -126,8 +126,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -173,7 +173,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/licaishi/Desktop/github/egg-cnode/app/public",
+      "dir": "/Users/licaishi/Desktop/github/58fe.com/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -181,7 +181,7 @@
     },
     "view": {
       "root": [
-        "/Users/licaishi/Desktop/github/egg-cnode/app/view"
+        "/Users/licaishi/Desktop/github/58fe.com/app/view"
       ],
       "cache": false,
       "defaultExtension": ".html",
@@ -191,7 +191,7 @@
       }
     },
     "ejs": {
-      "root": "/Users/licaishi/Desktop/github/egg-cnode/app/view",
+      "root": "/Users/licaishi/Desktop/github/58fe.com/app/view",
       "cache": false,
       "debug": false,
       "compileDebug": true,
@@ -254,7 +254,7 @@
       "passReqToCallback": true
     },
     "env": "local",
-    "name": "58fe-国内领先的前端社区",
+    "name": "前端社区",
     "keys": "<String len: 24>",
     "cookies": {},
     "proxy": false,
@@ -335,9 +335,9 @@
       "author": "",
       "license": "MIT"
     },
-    "baseDir": "/Users/licaishi/Desktop/github/egg-cnode",
+    "baseDir": "/Users/licaishi/Desktop/github/58fe.com",
     "HOME": "/Users/licaishi",
-    "rundir": "/Users/licaishi/Desktop/github/egg-cnode/run",
+    "rundir": "/Users/licaishi/Desktop/github/58fe.com/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -352,7 +352,7 @@
       "pageUrl": ""
     },
     "siteFile": {
-      "/favicon.ico": "/public/images/cnode_icon_32.png"
+      "/favicon.ico": "/public/images/58fe-ico.png"
     },
     "bodyParser": {
       "enable": true,
@@ -369,7 +369,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/licaishi/Desktop/github/egg-cnode/logs/cnode",
+      "dir": "/Users/licaishi/Desktop/github/58fe.com/logs/cnode",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -440,9 +440,9 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "description": "国内领先的前端社区-58fe.com",
+    "description": "58fe.com,国内最专业的前端技术社区，致力于前端技术研究探讨。",
     "site_logo": "",
-    "site_icon": "/public/images/cnode_icon_32.png",
+    "site_icon": "/public/images/58fe-ico.png",
     "debug": true,
     "host": "http://cnodejs.org",
     "session_secret": "<String len: 16>",
@@ -665,21 +665,21 @@
       }
     ],
     "rss": {
-      "title": "CNode：Node.js专业中文社区",
-      "link": "http://cnodejs.org",
+      "title": "国内领先的前端社区-58fe.com,",
+      "link": "https://58fe.com",
       "language": "zh-cn",
-      "description": "CNode：Node.js专业中文社区",
+      "description": "58fe.com,国内最专业的前端技术社区，致力于前端技术研究探讨。",
       "max_rss_items": 50
     },
     "qn_access": {
-      "accessKey": "<String len: 15>",
-      "secretKey": "<String len: 15>",
-      "bucket": "your bucket name",
-      "origin": "http://your qiniu domain",
-      "uploadURL": "http://xxxxxxxx"
+      "accessKey": "<String len: 40>",
+      "secretKey": "<String len: 40>",
+      "bucket": "cdn58fe",
+      "origin": "cdn.58fe.com",
+      "uploadURL": ""
     },
     "upload": {
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/app/public/upload/",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/app/public/upload/",
       "url": "/public/upload/"
     },
     "avatars_allow_hostname": [
@@ -696,11 +696,11 @@
       "ADMIN_USER": true
     },
     "mail_opts": {
-      "host": "smtp.126.com",
-      "port": 25,
+      "host": "smtp.qq.com",
+      "port": 465,
       "auth": {
-        "user": "club@126.com",
-        "pass": "<String len: 4>"
+        "user": "694372017@qq.com",
+        "pass": "<String len: 16>"
       },
       "ignoreTLS": true
     },
@@ -740,8 +740,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -753,8 +753,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-security",
       "version": "2.7.1"
     },
     "jsonp": {
@@ -766,8 +766,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-jsonp",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -779,8 +779,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -790,8 +790,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -801,8 +801,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -812,8 +812,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-schedule",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -825,8 +825,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart",
       "version": "2.10.1"
     },
     "development": {
@@ -840,8 +840,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -853,8 +853,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -864,8 +864,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -875,8 +875,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view",
       "version": "2.1.2"
     },
     "ejs": {
@@ -888,8 +888,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view-ejs",
       "version": "2.0.0"
     },
     "redis": {
@@ -899,8 +899,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-redis",
       "version": "2.4.0"
     },
     "mongoose": {
@@ -910,8 +910,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-mongoose",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-mongoose",
       "version": "2.2.1"
     },
     "passport": {
@@ -923,8 +923,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport",
       "version": "2.1.0"
     },
     "passportGithub": {
@@ -936,8 +936,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-github",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-github",
       "version": "1.0.0"
     },
     "passportLocal": {
@@ -949,8 +949,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-local",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-local",
       "version": "1.2.1"
     },
     "validate": {
@@ -960,8 +960,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-validate",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-validate",
       "version": "1.1.1"
     },
     "routerPlus": {
@@ -971,8 +971,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-router-plus",
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-router-plus",
       "version": "1.3.1"
     }
   }
