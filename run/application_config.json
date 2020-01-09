@@ -102,7 +102,6 @@
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-schedule/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart/config/locales",
-        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-logrotator/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-static/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-view/config/locales",
@@ -112,6 +111,7 @@
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-github/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-local/config/locales",
+        "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-alinode/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-validate/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-router-plus/config/locales",
         "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/locales",
@@ -124,7 +124,7 @@
       "functionName": "__"
     },
     "watcher": {
-      "type": "development",
+      "type": "default",
       "eventSources": {
         "default": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/lib/event-sources/default",
         "development": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-watcher/lib/event-sources/development"
@@ -155,13 +155,6 @@
         "cron": "0 30 4 * * *"
       }
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false
-    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -176,14 +169,15 @@
       "dir": "/Users/licaishi/Desktop/github/58fe.com/app/public",
       "dynamic": true,
       "preload": false,
-      "buffer": false,
-      "maxFiles": 1000
+      "buffer": true,
+      "maxFiles": 1000,
+      "maxAge": 31536000
     },
     "view": {
       "root": [
         "/Users/licaishi/Desktop/github/58fe.com/app/view"
       ],
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "ejs",
       "mapping": {
@@ -192,7 +186,7 @@
     },
     "ejs": {
       "root": "/Users/licaishi/Desktop/github/58fe.com/app/view",
-      "cache": false,
+      "cache": true,
       "debug": false,
       "compileDebug": true,
       "delimiter": null,
@@ -253,7 +247,25 @@
       "passwordField": "pass",
       "passReqToCallback": true
     },
-    "env": "local",
+    "alinode": {
+      "enable": true,
+      "server": "wss://agentserver.node.aliyun.com:8080",
+      "appid": "83395",
+      "secret": "<String len: 40>",
+      "cmddir": "/Users/licaishi/Desktop/github/58fe.com/node_modules/commandx",
+      "logdir": "/Users/licaishi/logs/alinode",
+      "error_log": [
+        "/Users/licaishi/logs/cnode/common-error.log",
+        "/Users/licaishi/logs/stderr.log"
+      ],
+      "packages": [
+        "/Users/licaishi/Desktop/github/58fe.com/package.json"
+      ],
+      "reconnectDelay": 10,
+      "heartbeatInterval": 60,
+      "reportInterval": 60
+    },
+    "env": "prod",
     "name": "前端社区",
     "keys": "<String len: 24>",
     "cookies": {},
@@ -369,21 +381,19 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/licaishi/Desktop/github/58fe.com/logs/cnode",
+      "dir": "/Users/licaishi/logs/cnode",
       "encoding": "utf8",
-      "env": "local",
+      "env": "prod",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": false,
+      "disableConsoleAfterReady": true,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "cnode-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "application"
     },
@@ -422,7 +432,6 @@
       "session",
       "securities",
       "i18n",
-      "eggLoaderTrace",
       "passportInitialize",
       "passportSession"
     ],
@@ -440,7 +449,7 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "description": "58fe.com,国内最专业的前端技术社区，致力于前端技术研究探讨。",
+    "description": "国内专业的前端技术交流社区58fe.com,致力于前端技术研究探讨。",
     "site_logo": "",
     "site_icon": "/public/images/58fe-ico.png",
     "debug": true,
@@ -704,10 +713,6 @@
       },
       "ignoreTLS": true
     },
-    "alinode": {
-      "appid": "",
-      "secret": "<String len: 0>"
-    },
     "topic": {
       "perDayPerUserLimitCount": 10
     },
@@ -829,21 +834,6 @@
       "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-multipart",
       "version": "2.10.1"
     },
-    "development": {
-      "enable": true,
-      "package": "egg-development",
-      "name": "development",
-      "dependencies": [
-        "watcher"
-      ],
-      "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
-      "from": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg/config/plugin.js",
-      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-development",
-      "version": "2.4.3"
-    },
     "logrotator": {
       "enable": true,
       "package": "egg-logrotator",
@@ -952,6 +942,19 @@
       "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.js",
       "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-passport-local",
       "version": "1.2.1"
+    },
+    "alinode": {
+      "enable": true,
+      "env": [
+        "prod"
+      ],
+      "name": "alinode",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "from": "/Users/licaishi/Desktop/github/58fe.com/config/plugin.prod.js",
+      "package": "egg-alinode",
+      "path": "/Users/licaishi/Desktop/github/58fe.com/node_modules/egg-alinode",
+      "version": "2.0.1"
     },
     "validate": {
       "enable": true,

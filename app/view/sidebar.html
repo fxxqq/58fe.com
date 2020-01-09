@@ -39,7 +39,7 @@
   <% } %>
 
   <% if (!current_user || !current_user.isAdvanced) { %>
-    <%- include ./_ads.html %>
+  <%- include ./_ads.html %>
   <% } %>
 
   <% if (typeof no_reply_topics !== 'undefined') { %>
@@ -51,7 +51,7 @@
       <% if (no_reply_topics.length > 0) { %>
       <ul class="unstyled">
         <% no_reply_topics.forEach(topic => { %>
-          <%- include('./topic/small.html', { topic }) %>
+        <%- include('./topic/small.html', { topic }) %>
         <% }) %>
       </ul>
       <% } else { %>
@@ -82,45 +82,55 @@
   </div>
   <% } %>
 
-  <div class='panel'>
-    <div class='header'>
-      <span class='col_fade'>友情社区</span>
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">微信公众号</span>
     </div>
-    <div class='inner'>
-      <ol class="friendship-community">
-        <li>
-          <a href="https://eggjs.org/" target="_blank">
-            <img src="<%- helper.staticFile('/public/images/egg-logo.png') %>">
-          </a>
-        </li>
-        <li>
-          <a href="https://ruby-china.org/" target="_blank">
-            <img src="<%- helper.staticFile('/public/images/ruby-china-20150529.png') %>">
-          </a>
-        </li>
-        <div class="sep10"></div>
-        <li>
-          <a href="http://golangtc.com/" target="_blank">
-            <img src="<%- helper.staticFile('/public/images/golangtc-logo.png') %>">
-          </a>
-        </li>
-        <div class="sep10"></div>
-        <li>
-          <a href="http://phphub.org/" target="_blank">
-            <img src="<%- helper.staticFile('/public/images/phphub-logo.png') %>">
-          </a>
-        </li>
-      </ol>
+    <div class="inner cnode-app-download">
+      <img width="200" src="https://open.weixin.qq.com/qr/code?username=love_frontend" />
+      <br />
     </div>
   </div>
-  <div class='panel'>
-    <div class='header'>
-      <span class='col_fade'>客户端二维码</span>
+  <div class="panel add-favorite" onclick="AddFavorite('前端社区',location.href)">
+    <div class="inner">
+      <a href="javascript:void(0);">⭐️收藏本站</a>
     </div>
-    <div class='inner cnode-app-download'>
-      <img width='200' src="//dn-cnode.qbox.me/FtG0YVgQ6iginiLpf9W4_ShjiLfU">
-      <br />
-      <a href="https://github.com/soliury/noder-react-native" target="_blank">客户端源码地址</a>
+  </div>
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">友情链接</span>
+    </div>
+    <div class="inner">
+      <ol class="friendship-community">
+        <li>
+          <a href="http://www.ruanyifeng.com/blog/?ref=https://58fe.com" target="_blank">
+            阮一峰的网络日志
+          </a>
+        </li>
+        <li>
+          <a href="https://juejin.im/?ref=https://58fe.com" target="_blank">
+            掘金
+          </a>
+        </li>
+        <!-- <div class="sep10"></div> -->
+        <li>
+          <a href="https://segmentfault.com/?ref=https://58fe.com" target="_blank">
+            思否
+          </a>
+        </li>
+        <!-- <div class="sep10"></div> -->
+        <li>
+          <a href="https://vue-js.com/?ref=https://58fe.com" target="_blank">
+            vue-js中文社区
+          </a>
+        </li>
+        <li>
+          <a href="https://www.zhangxinxu.com/?ref=https://58fe.com" target="_blank">
+            张鑫旭的个人博客
+          </a>
+        </li>
+
+      </ol>
     </div>
   </div>
 

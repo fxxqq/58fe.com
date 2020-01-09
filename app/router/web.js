@@ -16,6 +16,12 @@ module.exports = app => {
 
   // home page
   router.get('/', site.index);
+
+  //tab
+  router.get('/:tab/', site.index)
+  router.get('/:tab/:label', site.index)
+  router.get('/:tab/:label/:page', site.index)
+
   // sitemap
   router.get('/sitemap.xml', site.sitemap);
   // mobile app download

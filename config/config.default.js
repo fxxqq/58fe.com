@@ -4,9 +4,9 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  config.name = '前端社区';
+  config.name = '前端社区(内测版)';
 
-  config.description = '58fe.com,国内最专业的前端技术社区，致力于前端技术研究探讨。';
+  config.description = '国内专业的前端技术交流社区58fe.com,致力于前端技术研究探讨。';
 
   config.site_logo = '';
 
@@ -226,8 +226,8 @@ module.exports = appInfo => {
 
   config.alinode = {
     // 从 `Node.js 性能平台` 获取对应的接入参数
-    appid: process.env.EGG_ALINODE_APPID || '',
-    secret: process.env.EGG_ALINODE_SECRET || '',
+    appid: process.env.EGG_ALINODE_APPID || '83395',
+    secret: process.env.EGG_ALINODE_SECRET || '2c59d6d32cbac77e17ee0dd312deb3c01b0b23fa',
   };
 
   config.topic = {
