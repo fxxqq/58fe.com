@@ -18,9 +18,9 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1519887194138_3450';
 
-  config.host = 'http://cnodejs.org';
+  config.host = 'https://58fe.com';
 
-  config.session_secret = 'node_club_secret'; // 务必修改
+  config.session_secret = 'qian188105274'; // 务必修改
 
   // add your config here
   config.middleware = ['locals', 'authUser', 'blockUser', 'errorPage', 'errorHandler'];
@@ -171,7 +171,7 @@ module.exports = appInfo => {
     'www.google-analytics.com',
   ];
 
-  config.auth_cookie_name = 'node_club';
+  config.auth_cookie_name = 'fe_club';
   config.admins = {
     ADMIN_USER: true,
   };
@@ -237,7 +237,7 @@ module.exports = appInfo => {
   config.list_topic_count = 20;
 
   // 每个 IP 每天可创建用户数
-  config.create_user_per_ip = 1000;
+  config.create_user_per_ip = 10;
 
   config.search = 'google'; // 'google', 'baidu', 'local'
 

@@ -444,8 +444,8 @@
     "site_logo": "",
     "site_icon": "/public/images/58fe-ico.png",
     "debug": true,
-    "host": "http://cnodejs.org",
-    "session_secret": "<String len: 16>",
+    "host": "https://58fe.com",
+    "session_secret": "<String len: 13>",
     "middleware": [
       "locals",
       "authUser",
@@ -691,7 +691,7 @@
       "gravatar.com",
       "www.google-analytics.com"
     ],
-    "auth_cookie_name": "node_club",
+    "auth_cookie_name": "fe_club",
     "admins": {
       "ADMIN_USER": true
     },
@@ -712,7 +712,7 @@
       "perDayPerUserLimitCount": 10
     },
     "list_topic_count": 20,
-    "create_user_per_ip": 1000,
+    "create_user_per_ip": 10,
     "search": "google",
     "default_page": 1,
     "default_limit": 20,
