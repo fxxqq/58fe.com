@@ -1,0 +1,979 @@
+{
+  "config": {
+    "session": {
+      "maxAge": 86400000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true,
+      "overwrite": true,
+      "signed": true,
+      "autoCommit": true,
+      "encode": "<Function encode>",
+      "decode": "<Function decode>",
+      "genid": "<Function v4>"
+    },
+    "security": {
+      "domainWhiteList": [],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": true,
+        "type": "ctoken",
+        "ignoreJSON": false,
+        "useSession": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf",
+        "refererWhiteList": [],
+        "ignore": "/api/*/*",
+        "matching": "<Function pathMatch>"
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN",
+        "matching": "<Function anonymous>"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "methodnoallow": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "noopen": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "nosniff": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block",
+        "matching": "<Function anonymous>"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "checkAddress": null
+      },
+      "_protocolWhiteListSet": "<Set>"
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror/lib/onerror_page.mustache"
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-jsonp/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-schedule/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-mongoose/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-github/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-local/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-validate/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-router-plus/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/locales",
+        "/Users/licaishi/Desktop/github/egg-cnode/config/locales"
+      ],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieDomain": "",
+      "cookieMaxAge": "1y",
+      "functionName": "__"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher/lib/event-sources/development"
+      }
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "egg-schedule.log"
+      }
+    },
+    "schedule": {
+      "directory": []
+    },
+    "multipart": {
+      "mode": "stream",
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": 102400,
+      "fields": 10,
+      "fileSize": 10485760,
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null,
+      "tmpdir": "/var/folders/4t/llfqmp4d3pnfjxsqv9j2xyz80000gp/T/egg-multipart-tmp/cnode",
+      "cleanSchedule": {
+        "cron": "0 30 4 * * *"
+      }
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "/Users/licaishi/Desktop/github/egg-cnode/app/public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000
+    },
+    "view": {
+      "root": [
+        "/Users/licaishi/Desktop/github/egg-cnode/app/view"
+      ],
+      "cache": false,
+      "defaultExtension": ".html",
+      "defaultViewEngine": "ejs",
+      "mapping": {
+        ".html": "ejs"
+      }
+    },
+    "ejs": {
+      "root": "/Users/licaishi/Desktop/github/egg-cnode/app/view",
+      "cache": false,
+      "debug": false,
+      "compileDebug": true,
+      "delimiter": null,
+      "strict": false,
+      "layout": "layout.html"
+    },
+    "redis": {
+      "default": {},
+      "app": true,
+      "agent": false,
+      "supportTimeCommand": true,
+      "client": {
+        "host": "127.0.0.1",
+        "port": 6379,
+        "password": "<String len: 0>",
+        "db": "0"
+      }
+    },
+    "mongoose": {
+      "url": "mongodb://127.0.0.1:27017/egg_cnode",
+      "options": {
+        "server": {
+          "poolSize": 20
+        },
+        "reconnectTries": 10,
+        "reconnectInterval": 500
+      },
+      "loadModel": true,
+      "app": true,
+      "agent": false,
+      "client": {
+        "url": "mongodb://127.0.0.1:27017/egg_cnode",
+        "options": {
+          "server": {
+            "poolSize": 20
+          },
+          "reconnectTries": 10,
+          "reconnectInterval": 500
+        }
+      }
+    },
+    "passportGithub": {
+      "key": "test",
+      "secret": "<String len: 4>",
+      "callbackURL": "/passport/github/callback",
+      "passReqToCallback": true,
+      "clientID": "test",
+      "clientSecret": "<String len: 4>",
+      "authorizationURL": "https://github.com/login/oauth/authorize",
+      "tokenURL": "https://github.com/login/oauth/access_token",
+      "scopeSeparator": ",",
+      "customHeaders": {
+        "User-Agent": "passport-github"
+      }
+    },
+    "passportLocal": {
+      "usernameField": "name",
+      "passwordField": "pass",
+      "passReqToCallback": true
+    },
+    "env": "local",
+    "name": "58fe-国内领先的前端社区",
+    "keys": "<String len: 24>",
+    "cookies": {},
+    "proxy": false,
+    "maxIpsCount": 0,
+    "maxProxyCount": 0,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "cnode",
+      "version": "1.0.0",
+      "description": "",
+      "private": true,
+      "dependencies": {
+        "await-stream-ready": "^1.0.1",
+        "bcryptjs": "^2.4.3",
+        "data2xml": "^1.2.5",
+        "egg": "^2.2.1",
+        "egg-alinode": "^2.0.1",
+        "egg-mongoose": "^2.1.1",
+        "egg-passport": "^2.0.1",
+        "egg-passport-github": "^1.0.0",
+        "egg-passport-local": "^1.2.1",
+        "egg-redis": "^2.0.0",
+        "egg-router-plus": "^1.2.0",
+        "egg-scripts": "^2.5.0",
+        "egg-validate": "^1.0.0",
+        "egg-view-ejs": "^2.0.0",
+        "loader": "^2.1.1",
+        "loader-builder": "^2.6.0",
+        "loader-koa": "^2.0.1",
+        "lodash": "^4.17.5",
+        "markdown-it": "^8.4.1",
+        "nodemailer": "^4.6.2",
+        "nodemailer-smtp-transport": "^2.7.4",
+        "qiniu": "^7.1.3",
+        "stream-wormhole": "^1.0.3",
+        "uuid": "^3.2.1",
+        "validator": "^9.4.1",
+        "xmlbuilder": "^9.0.7"
+      },
+      "devDependencies": {
+        "autod": "^3.0.1",
+        "autod-egg": "^1.0.0",
+        "egg-bin": "^4.3.5",
+        "egg-ci": "^1.8.0",
+        "egg-mock": "^3.14.0",
+        "eslint": "^4.11.0",
+        "eslint-config-egg": "^6.0.0",
+        "webstorm-disable-index": "^1.2.0"
+      },
+      "engines": {
+        "node": ">=8.9.0"
+      },
+      "scripts": {
+        "start": "egg-scripts start --daemon --title=egg-server-cnode",
+        "stop": "egg-scripts stop --title=egg-server-cnode",
+        "restart": "npm run stop && npm run start",
+        "docker": "egg-scripts start --title=egg-server-cnode",
+        "dev": "egg-bin dev",
+        "debug": "egg-bin debug",
+        "test": "npm run lint -- --fix && npm run test-local",
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "ci": "npm run lint && npm run cov",
+        "autod": "autod",
+        "assets": "loader app/view app/"
+      },
+      "ci": {
+        "version": "8",
+        "services": "redis-server, mongodb"
+      },
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "author": "",
+      "license": "MIT"
+    },
+    "baseDir": "/Users/licaishi/Desktop/github/egg-cnode",
+    "HOME": "/Users/licaishi",
+    "rundir": "/Users/licaishi/Desktop/github/egg-cnode/run",
+    "dump": {
+      "ignore": "<Set>"
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "/public/images/cnode_icon_32.png"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "1mb",
+      "jsonLimit": "1mb",
+      "textLimit": "1mb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      },
+      "returnRawBody": true
+    },
+    "logger": {
+      "dir": "/Users/licaishi/Desktop/github/egg-cnode/logs/cnode",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "INFO",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "cnode-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "type": "application"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheLookupInterval": 10000,
+      "dnsCacheMaxLength": 1000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      }
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "less",
+      "meta",
+      "siteFile",
+      "notfound",
+      "static",
+      "bodyParser",
+      "overrideMethod",
+      "session",
+      "securities",
+      "i18n",
+      "eggLoaderTrace",
+      "passportInitialize",
+      "passportSession"
+    ],
+    "workerStartTimeout": 600000,
+    "serverTimeout": null,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 7001,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "description": "国内领先的前端社区-58fe.com",
+    "site_logo": "",
+    "site_icon": "/public/images/cnode_icon_32.png",
+    "debug": true,
+    "host": "http://cnodejs.org",
+    "session_secret": "<String len: 16>",
+    "middleware": [
+      "locals",
+      "authUser",
+      "blockUser",
+      "errorPage",
+      "errorHandler"
+    ],
+    "authUser": {
+      "enable": true,
+      "match": "/"
+    },
+    "allow_sign_up": true,
+    "site_static_host": "",
+    "mini_assets": false,
+    "tabs": [
+      [
+        "share",
+        "分享"
+      ],
+      [
+        "ask",
+        "问答"
+      ],
+      [
+        "job",
+        "招聘"
+      ]
+    ],
+    "fetabs": [
+      {
+        "tab": "index",
+        "name": "首页",
+        "labels": [
+          [
+            "all",
+            "全部"
+          ],
+          [
+            "excellent",
+            "精华"
+          ],
+          [
+            "hot",
+            "最近热门"
+          ]
+        ]
+      },
+      {
+        "tab": "tech",
+        "name": "技术",
+        "labels": [
+          [
+            "all",
+            "全部"
+          ],
+          [
+            "excellent",
+            "精华"
+          ],
+          [
+            "share",
+            "技术分享"
+          ],
+          [
+            "interview",
+            "面试分享"
+          ],
+          [
+            "vue",
+            "vue"
+          ],
+          [
+            "react",
+            "react"
+          ],
+          [
+            "node",
+            "node"
+          ],
+          [
+            "css",
+            "css"
+          ],
+          [
+            "js",
+            "javascript"
+          ],
+          [
+            "webpack",
+            "webpack"
+          ],
+          [
+            "other",
+            "其他"
+          ]
+        ]
+      },
+      {
+        "tab": "circle",
+        "name": "圈子",
+        "labels": [
+          [
+            "all",
+            "全部"
+          ],
+          [
+            "excellent",
+            "精华"
+          ],
+          [
+            "infer",
+            "交友相亲"
+          ],
+          [
+            "free-time",
+            "摸鱼划水"
+          ],
+          [
+            "post-part-time",
+            "发布兼职"
+          ],
+          [
+            "seeking-part-time",
+            "寻求兼职"
+          ]
+        ]
+      },
+      {
+        "tab": "ask",
+        "name": "问答",
+        "labels": [
+          [
+            "all",
+            "全部"
+          ],
+          [
+            "unsolved",
+            "未解决"
+          ],
+          [
+            "solved",
+            "已解决"
+          ],
+          [
+            "excellent",
+            "精华"
+          ]
+        ]
+      },
+      {
+        "tab": "job",
+        "name": "内推",
+        "labels": [
+          [
+            "all",
+            "全部"
+          ],
+          [
+            "infer",
+            "内推"
+          ],
+          [
+            "apply-job",
+            "求职"
+          ],
+          [
+            "bj",
+            "北京"
+          ],
+          [
+            "sh",
+            "上海"
+          ],
+          [
+            "sz",
+            "深圳"
+          ],
+          [
+            "gz",
+            "广州"
+          ],
+          [
+            "hz",
+            "杭州"
+          ],
+          [
+            "other-city",
+            "其他城市"
+          ],
+          [
+            "overseas",
+            "海外"
+          ]
+        ]
+      },
+      {
+        "tab": "more",
+        "name": "更多",
+        "labels": [
+          [
+            "promote",
+            "推广"
+          ],
+          [
+            "suggest",
+            "建议意见"
+          ],
+          [
+            "bug-feedback",
+            "bug反馈"
+          ],
+          [
+            "dev",
+            "测试"
+          ]
+        ]
+      }
+    ],
+    "rss": {
+      "title": "CNode：Node.js专业中文社区",
+      "link": "http://cnodejs.org",
+      "language": "zh-cn",
+      "description": "CNode：Node.js专业中文社区",
+      "max_rss_items": 50
+    },
+    "qn_access": {
+      "accessKey": "<String len: 15>",
+      "secretKey": "<String len: 15>",
+      "bucket": "your bucket name",
+      "origin": "http://your qiniu domain",
+      "uploadURL": "http://xxxxxxxx"
+    },
+    "upload": {
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/app/public/upload/",
+      "url": "/public/upload/"
+    },
+    "avatars_allow_hostname": [
+      "avatars0.githubusercontent.com",
+      "avatars1.githubusercontent.com",
+      "avatars2.githubusercontent.com",
+      "avatars.githubusercontent.com",
+      "www.gravatar.com",
+      "gravatar.com",
+      "www.google-analytics.com"
+    ],
+    "auth_cookie_name": "node_club",
+    "admins": {
+      "ADMIN_USER": true
+    },
+    "mail_opts": {
+      "host": "smtp.126.com",
+      "port": 25,
+      "auth": {
+        "user": "club@126.com",
+        "pass": "<String len: 4>"
+      },
+      "ignoreTLS": true
+    },
+    "alinode": {
+      "appid": "",
+      "secret": "<String len: 0>"
+    },
+    "topic": {
+      "perDayPerUserLimitCount": 10
+    },
+    "list_topic_count": 20,
+    "create_user_per_ip": 1000,
+    "search": "google",
+    "default_page": 1,
+    "default_limit": 20,
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware",
+    "multipartParseOptions": {
+      "autoFields": false,
+      "defCharset": "utf8",
+      "limits": {
+        "fieldNameSize": 100,
+        "fieldSize": 102400,
+        "fields": 10,
+        "fileSize": 10485760,
+        "files": 10
+      },
+      "checkFile": "<Function checkFile>"
+    }
+  },
+  "plugins": {
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-session",
+      "version": "3.1.0"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-security",
+      "version": "2.7.1"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-jsonp",
+      "version": "2.0.0"
+    },
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-onerror",
+      "version": "2.1.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-i18n",
+      "version": "2.1.1"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-watcher",
+      "version": "3.1.0"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-schedule",
+      "version": "3.6.4"
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-multipart",
+      "version": "2.10.1"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-development",
+      "version": "2.4.3"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-logrotator",
+      "version": "3.1.0"
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-static",
+      "version": "2.2.0"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view",
+      "version": "2.1.2"
+    },
+    "ejs": {
+      "enable": true,
+      "package": "egg-view-ejs",
+      "name": "ejs",
+      "dependencies": [
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-view-ejs",
+      "version": "2.0.0"
+    },
+    "redis": {
+      "enable": true,
+      "package": "egg-redis",
+      "name": "redis",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-redis",
+      "version": "2.4.0"
+    },
+    "mongoose": {
+      "enable": true,
+      "package": "egg-mongoose",
+      "name": "mongoose",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-mongoose",
+      "version": "2.2.1"
+    },
+    "passport": {
+      "enable": true,
+      "package": "egg-passport",
+      "name": "passport",
+      "dependencies": [
+        "session"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport",
+      "version": "2.1.0"
+    },
+    "passportGithub": {
+      "enable": true,
+      "package": "egg-passport-github",
+      "name": "passportGithub",
+      "dependencies": [
+        "passport"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-github",
+      "version": "1.0.0"
+    },
+    "passportLocal": {
+      "enable": true,
+      "package": "egg-passport-local",
+      "name": "passportLocal",
+      "dependencies": [
+        "passport"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-passport-local",
+      "version": "1.2.1"
+    },
+    "validate": {
+      "enable": true,
+      "package": "egg-validate",
+      "name": "validate",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-validate",
+      "version": "1.1.1"
+    },
+    "routerPlus": {
+      "enable": true,
+      "package": "egg-router-plus",
+      "name": "routerPlus",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/licaishi/Desktop/github/egg-cnode/config/plugin.js",
+      "path": "/Users/licaishi/Desktop/github/egg-cnode/node_modules/egg-router-plus",
+      "version": "1.3.1"
+    }
+  }
+}
