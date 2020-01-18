@@ -16,3 +16,4 @@ dump.rdb
 *.debug.*
 app/assets.json
 
+.dockerignore
