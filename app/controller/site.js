@@ -182,7 +182,7 @@ class HomeController extends Controller {
     let tabIndex;
     this.config.fetabs.forEach((tabItem, index) => {
       if (tab === tabItem.tab) {
-        tabIndex = index;
+        tabIndex = index||0;
       }
     });
     const tabName = this.ctx.helper.tabName(tabIndex);

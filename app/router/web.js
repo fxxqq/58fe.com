@@ -14,13 +14,7 @@ module.exports = app => {
   const createTopicLimit = middleware.createTopicLimit(config.topic);
   const createUserLimit = middleware.createUserLimit(config.create_user_per_ip);
 
-  // home page
-  router.get('/', site.index);
 
-  //tab
-  router.get('/:tab/', site.index)
-  router.get('/:tab/:label', site.index)
-  router.get('/:tab/:label/:page', site.index)
 
   // sitemap
   router.get('/sitemap.xml', site.sitemap);
@@ -55,6 +49,13 @@ module.exports = app => {
   router.post('/search_pass', sign.updateSearchPass); // 更新密码
   router.get('/reset_pass', sign.resetPass); // 进入重置密码页面
   router.post('/reset_pass', sign.updatePass); // 更新密码
+
+  // home page
+  router.get('/', site.index);
+  //tab
+  router.get('/:tab/', site.index)
+  router.get('/:tab/:label', site.index)
+  router.get('/:tab/:label/:page', site.index)
 
   // user controller
   router.get('/user/:name', user.index); // 用户个人主页
