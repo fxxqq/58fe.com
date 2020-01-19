@@ -31,9 +31,9 @@ see [egg docs][egg] for more detail.
 
 ```bash
 brew install redis
-brew services start redis
+# brew services start redis
 brew install mongodb-community-shell
-brew services start mongodb-community
+brew services start mongodb-community&&brew services start redis
 ```
 
 #### Linux Install
