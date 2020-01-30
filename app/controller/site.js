@@ -179,10 +179,10 @@ class HomeController extends Controller {
     }
 
 
-    let tabIndex;
+    let tabIndex=0;
     this.config.fetabs.forEach((tabItem, index) => {
       if (tab === tabItem.tab) {
-        tabIndex = index||0;
+        tabIndex = index;
       }
     });
     const tabName = this.ctx.helper.tabName(tabIndex);

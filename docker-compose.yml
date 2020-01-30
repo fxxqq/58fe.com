@@ -26,6 +26,7 @@ services:
       - mongodb
     networks:
       - docker_cnode
+    tty: true
     ports:
       - 7001:7001
 
