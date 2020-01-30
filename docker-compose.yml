@@ -16,8 +16,8 @@ services:
       - EGG_REDIS_PASSWORD=egg_cnode
       - EGG_MONGODB_URL=mongodb://egg_cnode:egg_cnode@mongodb:27017/egg_cnode
       - EGG_MINI_ASSETS=true
-      - EGG_PASSPORT_GITHUB_CLIENT_ID=test
-      - EGG_PASSPORT_GITHUB_CLIENT_SECRET=test
+      - EGG_PASSPORT_GITHUB_CLIENT_ID=Iv1.fcfd34a22b3237ac
+      - EGG_PASSPORT_GITHUB_CLIENT_SECRET=296b286f5395d5fc98c34ddf4b99af4ceff1b970
       # - EGG_SITE_STATIC_HOST=${EGG_SITE_STATIC_HOST}
       - EGG_ALINODE_APPID=appid
       - EGG_ALINODE_SECRET=secret

@@ -84,7 +84,7 @@
             %>
 
           <li class="fe-header-nav-item <%= value === tab ? 'current' : '' %>">
-            <a href="/<%= value ==='index'?'':value %>" class="nav-link" href="/">
+            <a href="/<%= value ==='index'?'':'tab/'+value %>" class="nav-link">
               <%= text %>
             </a>
           </li>

@@ -1,6 +1,6 @@
 'use strict';
 const path = require('path');
-
+ 
 module.exports = appInfo => {
   const config = {};
 
@@ -13,7 +13,7 @@ module.exports = appInfo => {
   config.site_icon = '/public/images/58fe-ico.png';
 
   // debug 为 true 时，用于本地调试
-  config.debug = false;
+  config.debug = true;
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1519887194138_3450';

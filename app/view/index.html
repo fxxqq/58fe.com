@@ -7,7 +7,7 @@
         var value = item[0];
         var text = item[1]; %>
         
-      <a href="<%= value ? '/'+tab+'/' + value : '/' %>"
+      <a href="<%= value ? '/tab/'+tab+'/' + value : '/' %>"
         class="topic-tab <%= value === label ? 'current-tab' : '' %>"><%= text %></a>
       <% }) %>
     </div>

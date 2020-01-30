@@ -57,7 +57,8 @@
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
     "autod": "autod",
-    "assets": "loader app/view app/"
+    "assets": "loader app/view app/",
+    "frank":"export EGG_REDIS_PASSWORD=egg_cnode && export EGG_MONGODB_URL=mongodb://egg_cnode:egg_cnode@127.0.0.1:27017/egg_cnode && export EGG_PASSPORT_GITHUB_CLIENT_ID=${id} && export EGG_PASSPORT_GITHUB_CLIENT_SECRET=${secret} && npm run dev"
   },
   "ci": {
     "version": "8",

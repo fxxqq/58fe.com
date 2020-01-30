@@ -121,7 +121,7 @@ module.exports = app => {
 
   router.get("/search", search.index);
   //tab
-  router.get("/:tab/", site.index);
-  router.get("/:tab/:label", site.index);
-  router.get("/:tab/:label/:page", site.index);
+  router.get("/tab/:tab/", site.index);
+  router.get("/tab/:tab/:label", site.index);
+  router.get("/tab/:tab/:label/:page", site.index);
 };
