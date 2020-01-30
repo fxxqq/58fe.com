@@ -32,10 +32,6 @@ module.exports = app => {
     // 用户未激活
     if (!existUser.active) {
       // 发送激活邮件
-      console.log("config=>",config)
-      ctx.render('sign', {
-        error: '您的账号未激活！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号。',
-      });
       return null;
     }
 
