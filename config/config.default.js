@@ -174,6 +174,8 @@ module.exports = appInfo => {
   config.auth_cookie_name = 'fe_club';
   config.admins = {
     ADMIN_USER: true,
+    admin:true,
+    testaccount:true
   };
 
   config.siteFile = {
