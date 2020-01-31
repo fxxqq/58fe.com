@@ -5,6 +5,7 @@
     <div class='header'>
       <ol class='breadcrumb'>
         <li><a href='/'>主页</a><span class='divider'>/</span></li>
+        <li><a href='/'>话题</a><span class='divider'>/</span></li>
         <% if(typeof action !== 'undefined' && action == 'edit'){ %>
         <li class='active'>编辑话题</li>
         <% } else { %>
@@ -35,15 +36,19 @@
               <option value="">请选择</option>
               <%
               var tabValue = '';
+              var labels=[["tech", "技术"],
+              ["work", "工作"],
+              ["life", "生活"],
+              ["other", "其他"]];
               if (typeof tab !== 'undefined') {
                 tabValue = tab;
               }
-              var newTabs=tabs.slice(1);
-              newTabs.forEach(function (pair,index) {
-                var value = pair.tab;
-                var text = pair.name;
+          
+              labels.forEach(function (pair,index) {
+                var value = pair[0];
+                var text = pair[1];
                 %>
-                <option value="<%=index%>" <%= tabValue === value ? 'selected': '' %>><%=text%></option>
+                <option value="<%=value%>" <%= tabValue === value ? 'selected': '' %>><%=text%></option>
 
               <%});%>
             </select>
@@ -84,7 +89,7 @@
   (function () {
     var editor = new Editor();
     editor.render($('.editor')[0]);
-    var tabs = "<%- tabs %>";
+     
   
     // 版块选择的检查，必须选择
     $('#create_topic_form').on('submit', function (e) {
@@ -101,7 +106,7 @@
     $('#tab-value').on('change', function () {
       var $this = $(this);
       var value = $this.val();
-      console.log(tabs)
+     
       var warnMsg = '';
       if (value === 'job') {
         warnMsg = '<strong>为避免被管理员删帖，发帖时请好好阅读<a href="http://cnodejs.org/topic/541ed2d05e28155f24676a12" target="_blank">《招聘帖规范》</a></strong>';

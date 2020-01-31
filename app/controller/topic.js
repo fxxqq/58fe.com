@@ -96,7 +96,7 @@ class TopicController extends Controller {
   async create() {
     const { ctx, config } = this;
     await ctx.render('topic/edit', {
-      tabs: config.tabs,
+      tabs: config.tabs
     });
   }
 

@@ -79,7 +79,23 @@ module.exports = app => {
 
   // topic
 
-  // 新建文章界面
+  // 新建文章话题
+  router.get("/topic/create", userRequired, topic.create);
+
+  router.get("/topic/:tid", topic.index); // 显示某个话题
+  router.post("/topic/:tid/top", adminRequired, topic.top); // 将某话题置顶
+  router.post("/topic/:tid/good", adminRequired, topic.good); // 将某话题加精
+  router.get("/topic/:tid/edit", userRequired, topic.showEdit); // 编辑某话题
+  router.post("/topic/:tid/lock", adminRequired, topic.lock); // 锁定主题，不能再回复
+
+  router.post("/topic/:tid/delete", userRequired, topic.delete);
+
+  // 保存新建的话题
+  router.post("/topic/create", userRequired, createTopicLimit, topic.put);
+
+  router.post("/topic/:tid/edit", userRequired, topic.update);
+  router.post("/topic/collect", userRequired, topic.collect); // 关注某话题
+  router.post("/topic/de_collect", userRequired, topic.de_collect); // 取消关注某话题
   router.get("/topic/create", userRequired, topic.create);
 
   router.get("/topic/:tid", topic.index); // 显示某个话题
@@ -91,11 +107,12 @@ module.exports = app => {
   router.post("/topic/:tid/delete", userRequired, topic.delete);
 
   // 保存新建的文章
-  router.post("/topic/create", userRequired, createTopicLimit, topic.put);
+  router.post("/article/create", userRequired, createTopicLimit, topic.put);
 
-  router.post("/topic/:tid/edit", userRequired, topic.update);
-  router.post("/topic/collect", userRequired, topic.collect); // 关注某话题
-  router.post("/topic/de_collect", userRequired, topic.de_collect); // 取消关注某话题
+  router.post("/article/:tid/edit", userRequired, topic.update);
+  router.post("/article/collect", userRequired, topic.collect); // 关注某话题
+  router.post("/article/de_collect", userRequired, topic.de_collect); // 取消关注某话题
+
 
   // reply controller
   router.post(
@@ -120,7 +137,7 @@ module.exports = app => {
   router.get("/rss", rss.index);
 
   router.get("/search", search.index);
-  //tab
+  //版块
   router.get("/tab/:tab/", site.index);
   router.get("/tab/:tab/:label", site.index);
   router.get("/tab/:tab/:label/:page", site.index);

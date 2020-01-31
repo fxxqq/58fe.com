@@ -67,7 +67,6 @@ module.exports = appInfo => {
         ["tech", "技术"],
         ["work", "工作"],
         ["life", "生活"],
-
         ["other", "其他"]
       ]
     },
