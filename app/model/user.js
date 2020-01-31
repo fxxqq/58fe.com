@@ -1,7 +1,5 @@
 'use strict';
 
-const utility = require('utility');
-
 module.exports = app => {
   const mongoose = app.mongoose;
   const Schema = mongoose.Schema;
@@ -55,12 +53,7 @@ module.exports = app => {
   UserSchema.virtual('avatar_url').get(function() {
     let url =
       this.avatar ||
-      'https://gravatar.com/avatar/' +
-        utility.md5(this.email.toLowerCase()) +
-        '?size=48';
-
-    // www.gravatar.com 被墙
-    url = url.replace('www.gravatar.com', 'gravatar.com');
+      'http://cdn.58fe.com/avatar/1.png';
 
     // 让协议自适应 protocol，使用 `//` 开头
     if (url.indexOf('http:') === 0) {

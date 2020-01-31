@@ -38,15 +38,19 @@
               if (typeof tab !== 'undefined') {
                 tabValue = tab;
               }
-              tabs.forEach(function (pair) {
-                var value = pair[0];
-                var text = pair[1];
+              var newTabs=tabs.slice(1);
+              newTabs.forEach(function (pair,index) {
+                var value = pair.tab;
+                var text = pair.name;
                 %>
-                <option value="<%=value%>" <%= tabValue === value ? 'selected': '' %>><%=text%></option>
+                <option value="<%=index%>" <%= tabValue === value ? 'selected': '' %>><%=text%></option>
 
               <%});%>
             </select>
             <span id="topic_create_warn"></span>
+            <div class="label-list">
+              <%=tabValue%>
+            </div>
             <textarea autofocus class='span9' id='title' name='title' rows='1'
                       placeholder="标题字数 10 字以上"
                     ><%= typeof title !== 'undefined' && title || '' %></textarea>
@@ -80,6 +84,8 @@
   (function () {
     var editor = new Editor();
     editor.render($('.editor')[0]);
+    var tabs = "<%- tabs %>";
+  
     // 版块选择的检查，必须选择
     $('#create_topic_form').on('submit', function (e) {
       var tabValue = $('#tab-value').val();
@@ -95,6 +101,7 @@
     $('#tab-value').on('change', function () {
       var $this = $(this);
       var value = $this.val();
+      console.log(tabs)
       var warnMsg = '';
       if (value === 'job') {
         warnMsg = '<strong>为避免被管理员删帖，发帖时请好好阅读<a href="http://cnodejs.org/topic/541ed2d05e28155f24676a12" target="_blank">《招聘帖规范》</a></strong>';

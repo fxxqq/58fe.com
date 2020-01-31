@@ -47,7 +47,6 @@
   .js('/public/libs/jquery.atwho.js')
   .js('/public/libs/markdownit.js')
   .js('/public/libs/code-prettify/prettify.js')
-  .js('/public/libs/qrcode.js')
   .js('/public/javascripts/main.js')
   .js('/public/javascripts/responsive.js')
   .done(assets, config.site_static_host, config.mini_assets)
@@ -78,7 +77,7 @@
       </a>
          <ul id="main-nav-menu" class="fe-header-nav">
             <% if((typeof(tab) == 'undefined')){ tab=null }
-            config.fetabs.forEach(function (pair) { 
+            config.tabs.forEach(function (pair) { 
               var value = pair.tab; 
               var text = pair.name;
             %>

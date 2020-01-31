@@ -83,7 +83,7 @@ exports.staticFile = function(filePath) {
 exports.tabName = function(tabIndex) {
   let tabName = '';
   if (tabIndex) {
-    tabName = this.app.config.fetabs[tabIndex].name;
+    tabName = this.app.config.tabs[tabIndex].name;
   }
   return tabName;
 };
