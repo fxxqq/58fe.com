@@ -56,7 +56,11 @@ module.exports = appInfo => {
         ["tech", "技术"],
         ["work", "工作"],
         ["life", "生活"],
-        ["other", "其他"]
+        // ["promote", "推广"],
+        // ["suggest", "建议"],
+        // ["bug-feedback", "bug反馈"],
+        ["dev", "测试"],
+        [("other", "其他")]
       ]
     },
     {
@@ -107,18 +111,7 @@ module.exports = appInfo => {
         ["sz", "深圳"],
         ["gz", "广州"],
         ["hz", "杭州"],
-        ["other-city", "其他城市"],
-        ["overseas", "海外"]
-      ]
-    },
-    {
-      tab: "more",
-      name: "更多",
-      labels: [
-        ["promote", "推广"],
-        ["suggest", "建议意见"],
-        ["bug-feedback", "bug反馈"],
-        ["dev", "测试"]
+        ["other-city", "其他城市"]
       ]
     }
   ];
