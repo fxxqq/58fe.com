@@ -109,7 +109,7 @@ class TopicController extends Controller {
     const { body } = ctx.request;
 
     // 得到所有的 tab, e.g. ['ask', 'share', ..]
-    const allTabs = tabs.map(tPair => tPair[0]);
+    const allTabs = tabs[1].labels.map(tPair => tPair[0]);
 
     // 使用 egg_validate 验证
     // TODO: 此处可以优化，将所有使用egg_validate的rules集中管理，避免即时新建对象

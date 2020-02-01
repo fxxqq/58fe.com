@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const MarkdownIt = require('markdown-it');
-const validator = require('validator');
-const jsxss = require('xss');
-const moment = require('moment');
-const bcrypt = require('bcryptjs');
+const MarkdownIt = require("markdown-it");
+const validator = require("validator");
+const jsxss = require("xss");
+const moment = require("moment");
+const bcrypt = require("bcryptjs");
 
-moment.locale('zh-cn'); // 使用中文
+moment.locale("zh-cn"); // 使用中文
 
 // Set default options
 const md = new MarkdownIt();
@@ -16,22 +16,22 @@ md.set({
   xhtmlOut: false, // Use '/' to close single tags (<br />)
   breaks: false, // Convert '\n' in paragraphs into <br>
   linkify: true, // Autoconvert URL-like text to links
-  typographer: true, // Enable smartypants and other sweet transforms
+  typographer: true // Enable smartypants and other sweet transforms
 });
 
 md.renderer.rules.fence = (tokens, idx) => {
   const token = tokens[idx];
-  let language = (token.info && 'language-' + token.info) || '';
+  let language = (token.info && "language-" + token.info) || "";
   language = validator.escape(language);
 
   return (
     '<pre class="prettyprint ' +
     language +
     '">' +
-    '<code>' +
+    "<code>" +
     validator.escape(token.content) +
-    '</code>' +
-    '</pre>'
+    "</code>" +
+    "</pre>"
   );
 };
 
@@ -40,52 +40,59 @@ md.renderer.rules.code_block = (tokens, idx /* , options */) => {
 
   return (
     '<pre class="prettyprint">' +
-    '<code>' +
+    "<code>" +
     validator.escape(token.content) +
-    '</code>' +
-    '</pre>'
+    "</code>" +
+    "</pre>"
   );
 };
 
 const myxss = new jsxss.FilterXSS({
   onIgnoreTagAttr(tag, name, value) {
     // 让 prettyprint 可以工作
-    if (tag === 'pre' && name === 'class') {
+    if (tag === "pre" && name === "class") {
       return name + '="' + jsxss.escapeAttrValue(value) + '"';
     }
-  },
+  }
 });
 
 exports.markdown = text => {
   return (
     '<div class="markdown-text">' +
-    myxss.process(md.render(text || '')) +
-    '</div>'
+    myxss.process(md.render(text || "")) +
+    "</div>"
   );
 };
 
 exports.escapeSignature = signature => {
   return signature
-    .split('\n')
+    .split("\n")
     .map(p => {
       return validator.escape(p);
     })
-    .join('<br>');
+    .join("<br>");
 };
 
 exports.staticFile = function(filePath) {
-  if (filePath.indexOf('http') === 0 || filePath.indexOf('//') === 0) {
+  if (filePath.indexOf("http") === 0 || filePath.indexOf("//") === 0) {
     return filePath;
   }
   return this.app.config.site_static_host + filePath;
 };
 
 exports.tabName = function(tabIndex) {
-  let tabName = '';
+  let tabName = "";
+  let { tabs } = this.app.config;
+
   if (tabIndex) {
-    tabName = this.app.config.tabs[tabIndex].name;
+    tabs[1].labels.map(item => {
+      if (item[0] === tabIndex) {
+        tabName=item[1];
+      }
+    });
+    
   }
-  return tabName;
+  return `${tabs[1].name}-${tabName}版块`;
 };
 
 exports.proxy = function(url) {

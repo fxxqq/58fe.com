@@ -55,7 +55,7 @@
   <% if (typeof topic !== 'undefined') { %>
   <title><%= topic.title %> - <%= config.name %></title>
   <% } else if (typeof pageTitle !== 'undefined') { %>
-  <title><%= pageTitle %> - <%= config.name %></title>
+  <title><%= pageTitle + '-' %><%= config.name %></title>
   <% } else { %>
   <title><%= config.description %></title>
   <% } %>
@@ -83,7 +83,7 @@
             %>
 
           <li class="fe-header-nav-item <%= value === tab ? 'current' : '' %>">
-            <a href="/<%= value ==='index'?'':'tab/'+value %>" class="nav-link">
+            <a href="/<%= value ===tabs[0].name?'':'tab/'+value %>" class="nav-link">
               <%= text %>
             </a>
           </li>

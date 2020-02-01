@@ -4,10 +4,10 @@ const path = require("path");
 module.exports = appInfo => {
   const config = {};
 
-  config.name = "前端社区(内测版)";
+  config.name = "前端社区";
 
   config.description =
-    "国内专业的前端技术交流社区58fe.com,致力于前端技术研究探讨。";
+    "国内比较专业、比较具影响力的前端技术交流社区58fe.com,致力于前端（react、vue、node等）技术研究探讨。";
 
   config.site_logo = "";
 
@@ -47,17 +47,6 @@ module.exports = appInfo => {
   //版块
   config.tabs = [
     {
-      tab: "index",
-      name: "首页",
-      labels: [
-        ["all", "全部"],
-        ["excellent", "精华"],
-        ["hot", "最近热门"]
-        // ['',"我关注的"]
-        // ['',"猜你喜欢"]
-      ]
-    },
-    {
       tab: "topic",
       name: "话题",
       labels: [
@@ -74,13 +63,13 @@ module.exports = appInfo => {
       tab: "column",
       name: "专栏",
       labels: [
-        ["all", "全部文章"],
-        ["hot", "热门文章"],
+        ["all", "全部"],
+        ["hot", "热门"],
         ["excellent", "精华"],
-        ["interview", "面试分享"],
         ["frontend", "前端"],
         ["backend", "后端"],
-        ["client", "安卓&ios"],
+        ["client", "客户端"],
+        ["interview", "面试分享"],
         ["other", "其他"]
       ]
     },
@@ -174,16 +163,6 @@ module.exports = appInfo => {
   config.ejs = {
     layout: "layout.html"
   };
-
-  config.avatars_allow_hostname = [
-    "avatars0.githubusercontent.com",
-    "avatars1.githubusercontent.com",
-    "avatars2.githubusercontent.com",
-    "avatars.githubusercontent.com",
-    "www.gravatar.com",
-    "gravatar.com",
-    "www.google-analytics.com"
-  ];
 
   config.auth_cookie_name = "fe_club";
   config.admins = {
