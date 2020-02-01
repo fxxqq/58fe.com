@@ -85,14 +85,14 @@ exports.tabName = function(tabIndex) {
   let { tabs } = this.app.config;
 
   if (tabIndex) {
-    tabs[1].labels.map(item => {
+    tabs[0].labels.map(item => {
       if (item[0] === tabIndex) {
         tabName=item[1];
       }
     });
     
   }
-  return `${tabs[1].name}-${tabName}版块`;
+  return `${tabs[0].name}-${tabName}版块`;
 };
 
 exports.proxy = function(url) {

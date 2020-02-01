@@ -77,13 +77,14 @@
       </a>
          <ul id="main-nav-menu" class="fe-header-nav">
             <% if((typeof(tab) == 'undefined')){ tab=null }
+            var firstTab=config.tabs[0].tab;
             config.tabs.forEach(function (pair) { 
               var value = pair.tab; 
               var text = pair.name;
             %>
 
-          <li class="fe-header-nav-item <%= value === tab ? 'current' : '' %>">
-            <a href="/<%= value ===tabs[0].name?'':'tab/'+value %>" class="nav-link">
+          <li class="fe-header-nav-item<%= value === firstTab ? ' current' : '' %>">
+            <a href="/<%= value ===firstTab?'':'tab/'+value %>" class="nav-link">
               <%= text %>
             </a>
           </li>
