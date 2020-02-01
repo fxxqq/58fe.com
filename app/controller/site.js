@@ -15,14 +15,14 @@ class HomeController extends Controller {
     // 取主题
     const query = {};
     if (!label || label === "all") {
-      query.tab = {
+      query.label = {
         $nin: ["dev"]
       };
     } else {
-      if (tab === "good") {
+      if (label === "good") {
         query.good = true;
       } else {
-        query.tab = label;
+        query.label = label;
       }
     }
     if (!query.good) {
@@ -103,6 +103,7 @@ class HomeController extends Controller {
 
     await this.ctx.render("index", locals);
   }
+  
   async sitemap() {
     const urlset = xmlbuilder.create("urlset", {
       version: "1.0",

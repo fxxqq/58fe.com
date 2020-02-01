@@ -7,7 +7,7 @@ module.exports = appInfo => {
   config.name = "前端社区";
 
   config.description =
-    "国内比较专业、比较具影响力的前端技术交流社区58fe.com,致力于前端（react、vue、node等）技术研究探讨。";
+    "国内比较专业、比较具影响力的前端技术交流社区,致力于前端技术研究探讨。";
 
   config.site_logo = "";
 
@@ -52,15 +52,11 @@ module.exports = appInfo => {
       labels: [
         ["all", "全部"],
         ["hot", "热门"],
-        ["excellent", "精华"],
         ["tech", "技术"],
         ["work", "工作"],
         ["life", "生活"],
-        // ["promote", "推广"],
-        // ["suggest", "建议"],
-        // ["bug-feedback", "bug反馈"],
-        ["dev", "测试"],
-        [("other", "其他")]
+        ["other", "其他"],
+        ["good", "精华"],
       ]
     },
     {
@@ -69,24 +65,12 @@ module.exports = appInfo => {
       labels: [
         ["all", "全部"],
         ["hot", "热门"],
-        ["excellent", "精华"],
         ["frontend", "前端"],
         ["backend", "后端"],
         ["client", "客户端"],
         ["interview", "面试分享"],
-        ["other", "其他"]
-      ]
-    },
-    {
-      tab: "circle",
-      name: "圈子",
-      labels: [
-        ["all", "全部"],
-        ["excellent", "精华"],
-        ["infer", "交友相亲"],
-        ["free-time", "摸鱼划水"],
-        ["post-part-time", "发布兼职"],
-        ["seeking-part-time", "寻求兼职"]
+        ["other", "其他"],
+        ["good", "精华"],
       ]
     },
     {
@@ -94,9 +78,10 @@ module.exports = appInfo => {
       name: "问答",
       labels: [
         ["all", "全部"],
+        ["hot", "热门"],
         ["unsolved", "未解决"],
         ["solved", "已解决"],
-        ["excellent", "精华"]
+        ["good", "精华"]
       ]
     },
     {
@@ -112,6 +97,20 @@ module.exports = appInfo => {
         ["gz", "广州"],
         ["hz", "杭州"],
         ["other-city", "其他城市"]
+      ]
+    },
+    {
+      tab: "circle",
+      name: "圈子",
+      labels: [
+        ["all", "全部"],
+        ["hot", "热门"],
+        ["infer", "交友相亲"],
+        ["free-time", "上班摸鱼"],
+        ["post-part-time", "发布兼职"],
+        ["seeking-part-time", "寻求兼职"],
+        ["game", "游戏开黑"],
+        ["good", "精华"],
       ]
     }
   ];

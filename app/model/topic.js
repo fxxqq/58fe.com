@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = app => {
   const mongoose = app.mongoose;
@@ -21,12 +21,13 @@ module.exports = app => {
     last_reply_at: { type: Date, default: Date.now },
     content_is_html: { type: Boolean },
     tab: { type: String },
-    deleted: { type: Boolean, default: false },
+    label: { type: String },
+    deleted: { type: Boolean, default: false }
   });
 
   TopicSchema.index({ create_at: -1 });
   TopicSchema.index({ top: -1, last_reply_at: -1 });
   TopicSchema.index({ author_id: 1, create_at: -1 });
 
-  return mongoose.model('Topic', TopicSchema);
+  return mongoose.model("Topic", TopicSchema);
 };

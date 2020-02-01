@@ -1,4 +1,31 @@
 <div id="sidebar">
+    <% if (current_user) { %>
+    <div class="panel">
+      <div class="header">
+        <span class="col_fade">发布</span>
+      </div>
+      <div class="inner release">
+        <a href="/topic/create" id="create_topic_btn">
+        
+          <span class="span-success">
+            话题
+          </span>
+        </a>
+        <a onclick="alert('开发中')">
+          <span class="span-success">文章</span>
+        </a>
+        <a onclick="alert('开发中')">
+          <span class="span-success">圈子</span>
+        </a>
+        <a onclick="alert('开发中')">
+          <span class="span-success">问题</span>
+        </a>
+        <a onclick="alert('开发中')">
+          <span class="span-success">工作</span>
+        </a>
+      </div>
+    </div>
+    <% } %> 
   <div class="panel">
     <% if (typeof user !== 'undefined' || current_user) { %>
     <div class="header">
@@ -28,30 +55,8 @@
     <% } %>
   </div>
 
-  <% if (current_user) { %>
-  <div class="panel">
-    <div class="header">
-      <span class="col_fade">发布</span>
-    </div>
-    <div class="inner release">
-      <a href="/topic/create" id="create_topic_btn">
-        <span class="span-success">话题</span>
-      </a>
-      <a onclick="alert('开发中')">
-        <span class="span-success">文章</span>
-      </a>
-      <a onclick="alert('开发中')">
-        <span class="span-success">圈子</span>
-      </a>
-      <a onclick="alert('开发中')">
-        <span class="span-success">问题</span>
-      </a>
-      <a onclick="alert('开发中')">
-        <span class="span-success">工作</span>
-      </a>
-    </div>
-  </div>
-  <% } %> <% if (!current_user || !current_user.isAdvanced) { %> <%- include
+
+  <% if (!current_user || !current_user.isAdvanced) { %> <%- include
   ./_ads.html %> <% } %> <% if (typeof no_reply_topics !== 'undefined') { %>
   <div class="panel">
     <div class="header">

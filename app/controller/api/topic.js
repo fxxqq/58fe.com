@@ -37,8 +37,8 @@ class TopicController extends Controller {
   }
 
   async create(ctx) {
-    const all_tabs = ctx.app.config.tabs.map(tab => {
-      return tab[ 0 ];
+    const all_labels = ctx.app.config.tabs.map(tab => {
+      return tab[0];
     });
 
     // TODO: 此处可以优化，将所有使用 egg_validate 的 rules 集中管理，避免即时新建对象
@@ -48,7 +48,7 @@ class TopicController extends Controller {
         max: 100,
         min: 5,
       },
-      tab: { type: 'enum', values: all_tabs },
+      label: { type: 'enum', values: all_labels },
       content: { type: 'string' },
     });
 
@@ -140,7 +140,7 @@ class TopicController extends Controller {
 
   async update(ctx) {
 
-    const all_tabs = ctx.app.config.tabs.map(tab => {
+    const all_labels = ctx.app.config.tabs.map(tab => {
       return tab[ 0 ];
     });
 
@@ -155,7 +155,7 @@ class TopicController extends Controller {
         max: 100,
         min: 5,
       },
-      tab: { type: 'enum', values: all_tabs },
+      label: { type: 'enum', values: all_labels },
       content: { type: 'string' },
     });
 

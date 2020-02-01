@@ -32,14 +32,13 @@
           <% } %>
           <fieldset>
             <span class="tab-selector">选择版块：</span>
-            <select name="tab" id="tab-value">
+            <select name="label" id="tab-value">
               <option value="">请选择</option>
               <%
               var tabValue = '';
-              var labels=[["tech", "技术"],
-              ["work", "工作"],
-              ["life", "生活"],
-              ["other", "其他"]];
+              var labels=config.tabs[0].labels.filter(function(ele){
+                return ele[0]!=='all'&&ele[0]!=='hot'&&ele[0]!=='good'
+              });
               if (typeof tab !== 'undefined') {
                 tabValue = tab;
               }
@@ -53,9 +52,7 @@
               <%});%>
             </select>
             <span id="topic_create_warn"></span>
-            <div class="label-list">
-              <%=tabValue%>
-            </div>
+           
             <textarea autofocus class='span9' id='title' name='title' rows='1'
                       placeholder="标题字数 10 字以上"
                     ><%= typeof title !== 'undefined' && title || '' %></textarea>

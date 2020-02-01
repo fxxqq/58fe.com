@@ -53,7 +53,7 @@ module.exports = app => {
   UserSchema.virtual('avatar_url').get(function() {
     let url =
       this.avatar ||
-      'http://cdn.58fe.com/avatar/1.png';
+      '//cdn.58fe.com/avatar/1.png';
 
     // 让协议自适应 protocol，使用 `//` 开头
     if (url.indexOf('http:') === 0) {
