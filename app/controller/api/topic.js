@@ -9,8 +9,8 @@ class TopicController extends Controller {
     const mdrender = ctx.query.mdrender !== 'false';
 
     const query = {};
-    if (!tab || tab === 'all') {
-      query.tab = { $nin: [ 'job', 'dev' ] };
+    if (!label || label === 'all') {
+      query.label = { $nin: [ 'job', 'dev' ] };
     } else {
       if (tab === 'good') {
         query.good = true;
@@ -18,6 +18,7 @@ class TopicController extends Controller {
         query.tab = tab;
       }
     }
+  
 
     let topics = await ctx.service.topic.getTopicsByQuery(query,
       // TODO 修改 eslint 支持在 {} 内使用 ...，栗子：{ sort: '-top -last_reply_at', ...ctx.pagination }
@@ -58,7 +59,7 @@ class TopicController extends Controller {
     const topic = await ctx.service.topic.newAndSave(
       body.title,
       body.content,
-      body.tab,
+      body.label,
       ctx.request.user.id
     );
 
@@ -109,7 +110,7 @@ class TopicController extends Controller {
 
     topic.content = mdrender ? ctx.helper.markdown(topic.content) : topic.content;
     topic.id = topic._id;
-    topic = _.pick(topic, [ 'id', 'author_id', 'tab', 'content', 'title', 'last_reply_at',
+    topic = _.pick(topic, [ 'id', 'author_id', 'label', 'content', 'title', 'last_reply_at',
       'good', 'top', 'reply_count', 'visit_count', 'create_at', 'author' ]);
 
     topic.author = _.pick(author, [ 'loginname', 'avatar_url' ]);
@@ -141,7 +142,7 @@ class TopicController extends Controller {
   async update(ctx) {
 
     const all_labels = ctx.app.config.tabs.map(tab => {
-      return tab[ 0 ];
+      return tab[0];
     });
 
     ctx.validate({

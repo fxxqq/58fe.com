@@ -11,26 +11,28 @@ class HomeController extends Controller {
     const { tabs } = this.config;
     const tab = this.ctx.params.tab || tabs[0].tab;
     const label = this.ctx.params.label || "all";
-
+   
     // 取主题
     const query = {};
-    if (!label || label === "all") {
-      query.label = {
-        $nin: ["dev"]
-      };
-    } else {
-      if (label === "good") {
-        query.good = true;
+    if (tab === "topic") {
+      if (!label || label === "all") {
+        query.label = {
+          $nin: ["dev"]
+        };
       } else {
-        query.label = label;
+        if (label === "good") {
+          query.good = true;
+        } else {
+          query.label = label;
+        }
       }
-    }
-    if (!query.good) {
-      query.create_at = {
-        $gte: moment()
-          .subtract(1, "years")
-          .toDate()
-      };
+      if (!query.good) {
+        query.create_at = {
+          $gte: moment()
+            .subtract(1, "years")
+            .toDate()
+        };
+      }
     }
 
     const limit = this.config.list_topic_count;
@@ -103,7 +105,7 @@ class HomeController extends Controller {
 
     await this.ctx.render("index", locals);
   }
-  
+
   async sitemap() {
     const urlset = xmlbuilder.create("urlset", {
       version: "1.0",

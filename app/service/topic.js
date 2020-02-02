@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const Service = require('egg').Service;
-const qiniu = require('qiniu');
+const Service = require("egg").Service;
+const qiniu = require("qiniu");
 
 class TopicService extends Service {
   /*
@@ -14,7 +14,7 @@ class TopicService extends Service {
       return {
         topic: null,
         author: null,
-        last_reply: null,
+        last_reply: null
       };
     }
 
@@ -28,7 +28,7 @@ class TopicService extends Service {
     return {
       topic,
       author,
-      last_reply,
+      last_reply
     };
   }
 
@@ -48,17 +48,17 @@ class TopicService extends Service {
   async getTopicsByQuery(query, opt) {
     query.deleted = false;
     const topics = await this.ctx.model.Topic.find(query, {}, opt).exec();
-
+    console.log(topics);
     if (topics.length === 0) {
       return [];
     }
 
     await Promise.all(
       topics.map(async topic => {
-        const [ author, reply ] = await Promise.all([
+        const [author, reply] = await Promise.all([
           this.service.user.getUserById(topic.author_id),
           // 获取主题的最后回复
-          this.service.reply.getReplyById(topic.last_reply),
+          this.service.reply.getReplyById(topic.last_reply)
         ]);
         topic.author = author;
         topic.reply = reply;
@@ -74,8 +74,8 @@ class TopicService extends Service {
   // for sitemap
   getLimit5w() {
     const query = { deleted: false };
-    const opts = { limit: 50000, sort: '-create_at' };
-    return this.ctx.model.Topic.find(query, '_id', opts).exec();
+    const opts = { limit: 50000, sort: "-create_at" };
+    return this.ctx.model.Topic.find(query, "_id", opts).exec();
   }
 
   /*
@@ -107,7 +107,7 @@ class TopicService extends Service {
     }
 
     const replies = await this.service.reply.getRepliesByTopicId(topic._id);
-    return [ topic, author, replies ];
+    return [topic, author, replies];
   }
 
   /*
@@ -121,8 +121,8 @@ class TopicService extends Service {
       last_reply: replyId,
       last_reply_at: new Date(),
       $inc: {
-        reply_count: 1,
-      },
+        reply_count: 1
+      }
     };
     const opts = { new: true };
     return this.ctx.model.Topic.findByIdAndUpdate(topicId, update, opts).exec();
@@ -151,9 +151,13 @@ class TopicService extends Service {
     }
     const opts = { new: true };
 
-    const topic = await this.ctx.model.Topic.findByIdAndUpdate(id, update, opts).exec();
+    const topic = await this.ctx.model.Topic.findByIdAndUpdate(
+      id,
+      update,
+      opts
+    ).exec();
     if (!topic) {
-      throw new Error('该主题不存在');
+      throw new Error("该主题不存在");
     }
 
     return topic;
@@ -199,17 +203,23 @@ class TopicService extends Service {
     const putExtra = new qiniu.form_up.PutExtra();
 
     return new Promise(function(resolve, reject) {
-      formUploader.putStream(uploadToken, key, readableStream, putExtra, function(respErr, respBody, respInfo) {
-        if (respErr) {
-          reject(respErr);
-          return;
+      formUploader.putStream(
+        uploadToken,
+        key,
+        readableStream,
+        putExtra,
+        function(respErr, respBody, respInfo) {
+          if (respErr) {
+            reject(respErr);
+            return;
+          }
+          if (respInfo.statusCode === 200) {
+            resolve(respBody);
+          } else {
+            reject(new Error("上传失败:statusCode !== 200"));
+          }
         }
-        if (respInfo.statusCode === 200) {
-          resolve(respBody);
-        } else {
-          reject(new Error('上传失败:statusCode !== 200'));
-        }
-      });
+      );
     });
   }
 }

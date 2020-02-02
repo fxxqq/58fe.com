@@ -109,7 +109,7 @@ module.exports = appInfo => {
         ["free-time", "上班摸鱼"],
         ["post-part-time", "发布兼职"],
         ["seeking-part-time", "寻求兼职"],
-        ["game", "游戏开黑"],
+        // ["game", "游戏开黑"],
         ["good", "精华"],
       ]
     }
