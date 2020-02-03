@@ -34,12 +34,13 @@ class MailService extends Service {
     const { config } = this;
     const from = `${config.name} <${config.mail_opts.auth.user}>`;
     const to = who;
-    const subject = config.name + '社区帐号激活';
+    const subject = config.name + '帐号激活';
     const html = '<p>您好：' + name + '</p>' +
-    '<p>我们收到您在' + config.name + '社区的注册信息，请点击下面的链接来激活帐户：</p>' +
-    '<a href  = "' + config.host + '/active_account?key=' + token + '&name=' + name + '">激活链接</a>' +
-    '<p>若您没有在' + config.name + '社区填写过注册信息，说明有人滥用了您的电子邮箱，请删除此邮件，我们对给您造成的打扰感到抱歉。</p>' +
-    '<p>' + config.name + '社区 谨上。</p>';
+    `<p>我们收到您在${config.name}(${config.host})的注册信息，请点击下面的链接来激活帐户：</p>` +
+    '<a href  = "' + config.host + '/active_account?key=' + token + '&name=' + name + '">激活链接</a>(非本人操作请勿点击)' +
+    '<p>若您没有在' + config.name + '社区填写过注册信息，说明有人滥用或者误用了您的电子邮箱，请删除此邮件，我们对给您造成的打扰感到抱歉。</p>' +
+    `<p><img src='https://mmbiz.qpic.cn/mmbiz_gif/5b4ibbmryfW5ibOzjmKOAX1jcpJVo6XB5snZ7aEBZ1rMJQZhsZD4bZqVgDxXtarv3WoGLDyZNITJEnA7TGfhfILQ/0?wx_fmt=gif'/></p>`+
+    '<p>' + config.name + ' 谨上。</p>';
 
     await this.sendMail({
       from,

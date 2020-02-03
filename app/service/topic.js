@@ -48,7 +48,7 @@ class TopicService extends Service {
   async getTopicsByQuery(query, opt) {
     query.deleted = false;
     const topics = await this.ctx.model.Topic.find(query, {}, opt).exec();
-    console.log(topics);
+ 
     if (topics.length === 0) {
       return [];
     }

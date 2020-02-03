@@ -18,3 +18,4 @@ app/assets.json
 
 
 .dockerignore
+.vscode/settings.json

@@ -1,67 +1,112 @@
-'use strict';
+"use strict";
 
-const validator = require('validator');
-const utility = require('utility');
-const uuid = require('uuid');
-const Controller = require('egg').Controller;
+const validator = require("validator");
+const utility = require("utility");
+const uuid = require("uuid");
+const Controller = require("egg").Controller;
 
 class SignController extends Controller {
   async showLogin() {
     const { ctx } = this;
-    await ctx.render('/sign/signin', { pageTitle: '登录' });
+    await ctx.render("/sign/signin", { pageTitle: "登录" });
   }
+  //登陆
+  async signin(existUser, password) {
+    const { ctx } = this;
+    console.log("未登录")
+    // 用户不存在
+    // if (!existUser) {
+    //   ctx.status = 422;
+    //   await ctx.render("sign/signin", {
+    //     error: "用户不存在。"
+    //   });
+    //   return null;
+    // }
 
+    // const passhash = existUser.pass;
+    // // TODO: change to async compare
+    // const equal = ctx.helper.bcompare(password, passhash);
+    // // 密码不匹配
+    // if (!equal) {
+    //   ctx.status = 403;
+    //   await ctx.render("sign/signin", {
+    //     error: "密码错误。"
+    //   });
+    //   return null;
+    // }
+
+    // // 用户未激活
+    // if (!existUser.active) {
+    //   // 重新发送激活邮件
+    //   let { email, loginname } = existUser;
+    //   await service.mail.sendActiveMail(
+    //     email,
+    //     utility.md5(email + passhash + config.session_secret),
+    //     loginname
+    //   );
+    //   ctx.status = 403;
+    //   await ctx.render("sign/signin", {
+    //     error:
+    //       "此帐号还没有被激活，激活链接已发送到 " + email + " 邮箱，请查收。"
+    //   });
+    //   return null;
+    // }
+  }
   // sign up
   async showSignup() {
     const { ctx } = this;
-    await ctx.render('/sign/signup', { pageTitle: '注册' });
+    await ctx.render("/sign/signup", { pageTitle: "注册" });
   }
 
   async signup() {
     const { ctx, service, config } = this;
-    const loginname = validator.trim(ctx.request.body.loginname || '').toLowerCase();
-    const email = validator.trim(ctx.request.body.email || '').toLowerCase();
-    const pass = validator.trim(ctx.request.body.pass || '');
-    const rePass = validator.trim(ctx.request.body.re_pass || '');
+    const loginname = validator
+      .trim(ctx.request.body.loginname || "")
+      .toLowerCase();
+    const email = validator.trim(ctx.request.body.email || "").toLowerCase();
+    const pass = validator.trim(ctx.request.body.pass || "");
+    const rePass = validator.trim(ctx.request.body.re_pass || "");
 
     let msg;
     // 验证信息的正确性
-    if ([ loginname, pass, rePass, email ].some(item => {
-      return item === '';
-    })) {
-      msg = '信息不完整。';
+    if (
+      [loginname, pass, rePass, email].some(item => {
+        return item === "";
+      })
+    ) {
+      msg = "信息不完整。";
     } else if (loginname.length < 5) {
-      msg = '用户名至少需要5个字符。';
+      msg = "用户名至少需要5个字符。";
     } else if (!ctx.helper.validateId(loginname)) {
-      msg = '用户名不合法。';
+      msg = "用户名不合法。";
     } else if (!validator.isEmail(email)) {
-      msg = '邮箱不合法。';
+      msg = "邮箱不合法。";
     } else if (pass !== rePass) {
-      msg = '两次密码输入不一致。';
+      msg = "两次密码输入不一致。";
     }
     // END 验证信息的正确性
 
     if (msg) {
       ctx.status = 422;
-      await ctx.render('sign/signup', {
+      await ctx.render("sign/signup", {
         error: msg,
         loginname,
-        email,
+        email
       });
       return;
     }
 
-    const users = await service.user.getUsersByQuery({ $or: [
-      { loginname },
-      { email },
-    ] }, {});
+    const users = await service.user.getUsersByQuery(
+      { $or: [{ loginname }, { email }] },
+      {}
+    );
 
     if (users.length > 0) {
       ctx.status = 422;
-      await ctx.render('sign/signup', {
-        error: '用户名或邮箱已被使用。',
+      await ctx.render("sign/signup", {
+        error: "用户名或邮箱已被使用。",
         loginname,
-        email,
+        email
       });
       return;
     }
@@ -71,11 +116,25 @@ class SignController extends Controller {
     // create gravatar
     const avatarUrl = service.user.makeGravatar(email);
 
-    await service.user.newAndSave(loginname, loginname, passhash, email, avatarUrl, false);
+    await service.user.newAndSave(
+      loginname,
+      loginname,
+      passhash,
+      email,
+      avatarUrl,
+      false
+    );
     // 发送激活邮件
-    await service.mail.sendActiveMail(email, utility.md5(email + passhash + config.session_secret), loginname);
-    await ctx.render('sign/signup', {
-      success: '欢迎加入 ' + config.name + '！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号。',
+    await service.mail.sendActiveMail(
+      email,
+      utility.md5(email + passhash + config.session_secret),
+      loginname
+    );
+    await ctx.render("sign/signup", {
+      success:
+        "欢迎加入 " +
+        config.name +
+        "！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号。"
     });
   }
 
@@ -83,47 +142,52 @@ class SignController extends Controller {
     const { ctx } = this;
     ctx.session = null;
     ctx.logout();
-    ctx.redirect('/');
+    ctx.redirect("/");
   }
 
   async activeAccount() {
     const { ctx, service, config } = this;
-    const key = validator.trim(ctx.query.key || '');
-    const name = validator.trim(ctx.query.name || '');
+    const key = validator.trim(ctx.query.key || "");
+    const name = validator.trim(ctx.query.name || "");
 
     const user = await service.user.getUserByLoginName(name);
     if (!user) {
-      await ctx.render('notify/notify', { error: '用户不存在' });
+      await ctx.render("notify/notify", { error: "用户不存在" });
       return;
     }
 
     const passhash = user.pass;
-    if (!user || utility.md5(user.email + passhash + config.session_secret) !== key) {
-      await ctx.render('notify/notify', { error: '信息有误，帐号无法被激活。' });
+    if (
+      !user ||
+      utility.md5(user.email + passhash + config.session_secret) !== key
+    ) {
+      await ctx.render("notify/notify", {
+        error: "信息有误，帐号无法被激活。"
+      });
       return;
     }
 
     if (user.active) {
-      await ctx.render('notify/notify', { error: '帐号已经是激活状态。' });
+      await ctx.render("notify/notify", { error: "帐号已经是激活状态。" });
       return;
     }
 
     user.active = true;
     await user.save();
-    await ctx.render('notify/notify', { success: '帐号已被激活，请登录' });
+    await ctx.render("notify/notify", { success: "帐号已被激活，请登录" });
   }
 
   async showSearchPass() {
-    await this.ctx.render('sign/search_pass');
+    await this.ctx.render("sign/search_pass");
   }
 
   async updateSearchPass() {
     const { ctx, service } = this;
     const email = validator.trim(ctx.request.body.email).toLowerCase();
     if (!validator.isEmail(email)) {
-      await this.ctx.render('sign/search_pass', {
-        error: '邮箱不合法',
-        email,
+      await this.ctx.render("sign/search_pass", {
+        error: "邮箱不合法",
+        email
       });
       return;
     }
@@ -134,9 +198,9 @@ class SignController extends Controller {
 
     const user = await service.user.getUserByMail(email);
     if (!user) {
-      await this.ctx.render('sign/search_pass', {
-        error: '没有这个电子邮箱。',
-        email,
+      await this.ctx.render("sign/search_pass", {
+        error: "没有这个电子邮箱。",
+        email
       });
       return;
     }
@@ -147,21 +211,22 @@ class SignController extends Controller {
 
     // 发送重置密码邮件
     // mail.sendResetPassMail(email, retrieveKey, user.loginname);
-    await this.ctx.render('notify/notify', {
-      success: '我们已给您填写的电子邮箱发送了一封邮件，请在24小时内点击里面的链接来重置密码。',
+    await this.ctx.render("notify/notify", {
+      success:
+        "我们已给您填写的电子邮箱发送了一封邮件，请在24小时内点击里面的链接来重置密码。"
     });
   }
 
   async resetPass() {
     const { ctx, service } = this;
-    const key = validator.trim(ctx.query.key || '');
-    const name = validator.trim(ctx.query.name || '');
+    const key = validator.trim(ctx.query.key || "");
+    const name = validator.trim(ctx.query.name || "");
 
     const user = await service.user.getUserByNameAndKey(name, key);
     if (!user) {
       ctx.status = 403;
-      await this.ctx.render('notify/notify', {
-        error: '信息有误，密码无法重置。',
+      await this.ctx.render("notify/notify", {
+        error: "信息有误，密码无法重置。"
       });
       return;
     }
@@ -170,34 +235,34 @@ class SignController extends Controller {
     const oneDay = 1000 * 60 * 60 * 24;
     if (!user.retrieve_time || now - user.retrieve_time > oneDay) {
       ctx.status = 403;
-      await this.ctx.render('notify/notify', {
-        error: '该链接已过期，请重新申请。',
+      await this.ctx.render("notify/notify", {
+        error: "该链接已过期，请重新申请。"
       });
       return;
     }
-    await this.ctx.render('sign/reset', { name, key });
+    await this.ctx.render("sign/reset", { name, key });
   }
 
   async updatePass() {
     const { ctx, service } = this;
-    const psw = validator.trim(ctx.request.body.psw) || '';
-    const repsw = validator.trim(ctx.request.body.repsw) || '';
-    const key = validator.trim(ctx.request.body.key) || '';
-    const name = validator.trim(ctx.request.body.name) || '';
+    const psw = validator.trim(ctx.request.body.psw) || "";
+    const repsw = validator.trim(ctx.request.body.repsw) || "";
+    const key = validator.trim(ctx.request.body.key) || "";
+    const name = validator.trim(ctx.request.body.name) || "";
 
     if (psw !== repsw) {
-      await this.ctx.render('sign/reset', {
+      await this.ctx.render("sign/reset", {
         name,
         key,
-        error: '两次密码输入不一致。',
+        error: "两次密码输入不一致。"
       });
       return;
     }
     const user = await service.user.getUserByNameAndKey(name, key);
 
     if (!user) {
-      await this.ctx.render('notify/notify', {
-        error: '错误的激活链接',
+      await this.ctx.render("notify/notify", {
+        error: "错误的激活链接"
       });
       return;
     }
@@ -208,7 +273,7 @@ class SignController extends Controller {
     user.active = true; // 用户激活
 
     await user.save();
-    await this.ctx.render('notify/notify', { success: '你的密码已重置。' });
+    await this.ctx.render("notify/notify", { success: "你的密码已重置。" });
   }
 }
 

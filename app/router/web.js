@@ -5,7 +5,6 @@
  */
 module.exports = app => {
   const { router, controller, config, middleware } = app;
-
   const {
     site,
     sign,
@@ -49,6 +48,9 @@ module.exports = app => {
 
   router.get("/signin", sign.showLogin); // 进入登录页面
   router.post("/passport/local", localStrategy);
+
+  // router.post("/passport/local", sign.signin); // 登录校验
+
   router.all("/signout", sign.signout); // 登出
   router.get("/active_account", sign.activeAccount); // 帐号激活
 
