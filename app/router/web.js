@@ -43,13 +43,13 @@ module.exports = app => {
 
   const localStrategy = app.passport.authenticate("local", {
     successRedirect: "/",
-    failureRedirect: "/signin"
+    failureRedirect: "/signin",
+    failureFlash: true
   });
-
+   
   router.get("/signin", sign.showLogin); // 进入登录页面
   router.post("/passport/local", localStrategy);
-
-  // router.post("/passport/local", sign.signin); // 登录校验
+  router.get("/signfail", sign.signin); // 登录校验
 
   router.all("/signout", sign.signout); // 登出
   router.get("/active_account", sign.activeAccount); // 帐号激活
@@ -117,9 +117,7 @@ module.exports = app => {
 
 
   // reply controller
-  router.post(
-    "/:topic_id/reply",
-    userRequired,
+  router.post("/:topic_id/reply", userRequired,
     // limit.peruserperday('create_reply', config.create_reply_per_day, { showJson: false }),
     reply.add
   ); // 提交一级回复

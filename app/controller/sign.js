@@ -10,47 +10,67 @@ class SignController extends Controller {
     const { ctx } = this;
     await ctx.render("/sign/signin", { pageTitle: "登录" });
   }
-  //登陆
-  async signin(existUser, password) {
-    const { ctx } = this;
-    console.log("未登录")
+  //用户名或者邮箱登陆
+  async signin() {
+    const { ctx, service, config } = this;
+
+    const username = validator.trim(ctx.request.body.name || "").toLowerCase();
+    const password = validator.trim(ctx.request.body.pass || "");
+
+    const getUser = username => {
+      if (username.indexOf("@") > 0) {
+        return ctx.service.user.getUserByMail(username);
+      }
+      return ctx.service.user.getUserByLoginName(username);
+    };
+    const existUser = await getUser(username);
+    console.log("登陆失败", username, ctx.request.body)
+
     // 用户不存在
-    // if (!existUser) {
-    //   ctx.status = 422;
-    //   await ctx.render("sign/signin", {
-    //     error: "用户不存在。"
-    //   });
-    //   return null;
-    // }
+    if (!existUser) {
+      ctx.status = 422;
 
-    // const passhash = existUser.pass;
-    // // TODO: change to async compare
-    // const equal = ctx.helper.bcompare(password, passhash);
-    // // 密码不匹配
-    // if (!equal) {
-    //   ctx.status = 403;
-    //   await ctx.render("sign/signin", {
-    //     error: "密码错误。"
-    //   });
-    //   return null;
-    // }
+      await ctx.render("sign/signin", {
+        error: "用户不存在。"
+      });
+      return;
+    }
 
-    // // 用户未激活
-    // if (!existUser.active) {
-    //   // 重新发送激活邮件
-    //   let { email, loginname } = existUser;
-    //   await service.mail.sendActiveMail(
-    //     email,
-    //     utility.md5(email + passhash + config.session_secret),
-    //     loginname
-    //   );
-    //   ctx.status = 403;
-    //   await ctx.render("sign/signin", {
-    //     error:
-    //       "此帐号还没有被激活，激活链接已发送到 " + email + " 邮箱，请查收。"
-    //   });
-    //   return null;
-    // }
+    const passhash = existUser.pass;
+    // TODO: change to async compare
+    const equal = ctx.helper.bcompare(password, passhash);
+    // 密码不匹配
+    if (!equal) {
+      ctx.status = 403;
+      await ctx.render("sign/signin", {
+        error: "密码错误。"
+      });
+      return null;
+    }
+
+    // 用户未激活
+    if (!existUser.active) {
+      // 重新发送激活邮件
+      let { email, loginname } = existUser;
+      await service.mail.sendActiveMail(
+        email,
+        utility.md5(email + passhash + config.session_secret),
+        loginname
+      );
+      ctx.status = 403;
+      await ctx.render("sign/signin", {
+        error:
+          "此帐号还没有被激活，激活链接已发送到 " + email + " 邮箱，请查收。"
+      });
+      return null;
+    }
+    passport.authenticate("local", {
+      successRedirect: "/",
+      failureRedirect: "/signin",
+      failureFlash: true
+    });
+
+
   }
   // sign up
   async showSignup() {
@@ -60,9 +80,7 @@ class SignController extends Controller {
 
   async signup() {
     const { ctx, service, config } = this;
-    const loginname = validator
-      .trim(ctx.request.body.loginname || "")
-      .toLowerCase();
+    const loginname = validator.trim(ctx.request.body.loginname || "").toLowerCase();
     const email = validator.trim(ctx.request.body.email || "").toLowerCase();
     const pass = validator.trim(ctx.request.body.pass || "");
     const rePass = validator.trim(ctx.request.body.re_pass || "");
@@ -135,6 +153,11 @@ class SignController extends Controller {
         "欢迎加入 " +
         config.name +
         "！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号。"
+    });
+
+    app.passport.authenticate("local", {
+      successRedirect: "/",
+      failureRedirect: "/signin",
     });
   }
 

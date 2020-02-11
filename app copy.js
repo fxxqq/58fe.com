@@ -6,7 +6,7 @@ module.exports = app => {
   if (app.config.debug) {
     app.config.coreMiddleware.unshift('less');
   }
-
+ 
   const localHandler = async (ctx, { username, password }) => {
     const getUser = username => {
       if (username.indexOf('@') > 0) {
@@ -15,13 +15,10 @@ module.exports = app => {
       return ctx.service.user.getUserByLoginName(username);
     };
     const existUser = await getUser(username);
-
+    
     // 用户不存在
     if (!existUser) {
-      ctx.status = 422;
-      ctx.render("sign/signin", {
-        error: "用户不存在。"
-      });
+      ctx.redirect("/111", "/");
       return null;
     }
 
@@ -84,53 +81,10 @@ module.exports = app => {
 
     return existUser;
   };
-  // weixin 鉴权处理
-  const weixinHandler = async (ctx, profile) => {
-    const email = profile.emails && profile.emails[0] && profile.emails[0].value;
-    const unionid = profile.refreshToken.unionid;
-    let existUser = await ctx.service.user.findByWeixinId(unionid);
 
-    // 用户不存在则创建
-    if (!existUser) {
-      existUser = new ctx.model.User();
-      existUser.weixinId = unionid;
-      existUser.password = GeneratePassword(10, false)
-    }
-    // 用户存在，更新字段
-    existUser.username = unionid;
-    existUser.displayName = profile.displayName;
-    existUser.email = email || existUser.email;
-    existUser.profileImageUrl = profile.photo;
-
-    try {
-      await existUser.save();
-      // await ctx.model.User.create(existUser);
-    } catch (ex) {
-      throw ex;
-    }
-
-    return existUser;
-  };
   app.passport.verify(async (ctx, user) => {
     ctx.logger.debug('passport.verify', user);
-    // const handler = user.provider === 'github' ? githubHandler : localHandler;
-    let handler;
-    switch (user.provider) {
-      case 'local':
-        ctx = app.createAnonymousContext();
-        handler = localHandler;
-        break;
-      case 'github':
-        handler = githubHandler;
-        break;
-      case 'weixin':
-        // passport-weixin 插件没有兼容egg-passport,没有ctx,创造一个匿名context实例
-        ctx = app.createAnonymousContext();
-        handler = weixinHandler;
-        break;
-      default:
-        break;
-    }
+    const handler = user.provider === 'github' ? githubHandler : localHandler;
     const existUser = await handler(ctx, user);
 
     if (existUser) {

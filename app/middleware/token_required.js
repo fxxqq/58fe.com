@@ -28,7 +28,7 @@ module.exports = () => {
       ctx.status = 403;
       ctx.body = {
         success: false,
-        error_msg: '您的账户被禁用',
+        error_msg: '您的账户被禁用,请联系管理员微信：qianduanmi解封',
       };
       return;
     }

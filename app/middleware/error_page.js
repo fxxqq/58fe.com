@@ -1,6 +1,6 @@
 'use strict';
 
-const status = [ 404, 403 ];
+const status = [404, 403];
 
 module.exports = () => {
   return async function errorPage(ctx, next) {

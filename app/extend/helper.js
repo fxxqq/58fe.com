@@ -118,3 +118,6 @@ exports.bhash = str => {
 exports.bcompare = (str, hash) => {
   return bcrypt.compareSync(str, hash);
 };
+exports.bcompare = (str, hash) => {
+  return bcrypt.compareSync(str, hash);
+};

@@ -7,14 +7,14 @@ module.exports = appInfo => {
   config.name = "前端社区";
 
   config.description =
-    "国内比较专业、比较具影响力的前端技术交流社区,致力于前端技术研究探讨。";
+    "国内比较专业、具影响力的前端技术交流社区,致力于前端技术的研究与探讨。";
 
   config.site_logo = "";
 
   config.site_icon = "/public/images/58fe-ico.png";
 
   // debug 为 true 时，用于本地调试
-  config.debug = !!process.env.EGG_IS_DEBUG;
+  config.debug = true;
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + "_1519887194138_3450";
@@ -52,9 +52,13 @@ module.exports = appInfo => {
       labels: [
         ["all", "全部"],
         ["hot", "热门"],
-        ["tech", "技术"],
-        ["work", "工作"],
-        ["life", "生活"],
+        ["tech", "技术交流"],
+        ["work", "工作吐槽"],
+        ["freetime", "上班摸鱼"],
+        ["infer", "交友相亲"],
+        ["life", "生活相关"],
+        ["parttime", "兼职外包"],
+        ["feedback", "反馈与帮助"],
         ["other", "其他"],
         ["good", "精华"],
       ]
@@ -105,12 +109,7 @@ module.exports = appInfo => {
       labels: [
         ["all", "全部"],
         ["hot", "热门"],
-        ["infer", "交友相亲"],
-        ["free-time", "上班摸鱼"],
-        ["post-part-time", "发布兼职"],
-        ["seeking-part-time", "寻求兼职"],
-        // ["game", "游戏开黑"],
-        ["good", "精华"],
+        ["good", "推荐"],
       ]
     }
   ];
