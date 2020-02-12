@@ -46,7 +46,7 @@ module.exports = app => {
     failureRedirect: "/signin",
     failureFlash: true
   });
-   
+
   router.get("/signin", sign.showLogin); // 进入登录页面
   router.post("/passport/local", localStrategy);
   router.get("/signfail", sign.signin); // 登录校验
@@ -55,7 +55,12 @@ module.exports = app => {
   router.get("/active_account", sign.activeAccount); // 帐号激活
 
   // github oauth
-  app.passport.mount("github");
+  app.passport.mount("github", {
+    loginURL: '/passport/github',
+    callbackURL: 'https://58fe.com/',
+    successReturnToOrRedirect: '/',
+    failWithError: true
+  });
 
   router.get("/search_pass", sign.showSearchPass); // 找回密码页面
   router.post("/search_pass", sign.updateSearchPass); // 更新密码
