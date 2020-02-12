@@ -190,8 +190,9 @@ module.exports = appInfo => {
 
   // passport
   config.passportGithub = {
-    key: process.env.EGG_PASSPORT_GITHUB_CLIENT_ID || "test",
-    secret: process.env.EGG_PASSPORT_GITHUB_CLIENT_SECRET || "test"
+    key: process.env.EGG_PASSPORT_GITHUB_CLIENT_ID || "bcb67bdf9ab12653b478",
+    secret: process.env.EGG_PASSPORT_GITHUB_CLIENT_SECRET || "c58126314ee373eb91a010cd6e98b2b76c9ec48e",
+    callbackURL: 'https://58fe.com/'
   };
 
   config.passportLocal = {
