@@ -57,7 +57,7 @@ module.exports = app => {
   // github oauth
   app.passport.mount("github", {
     loginURL: '/passport/github',
-    callbackURL: 'https://58fe.com/',
+    callbackURL: 'https://58fe.com/passport/github/callback',
     successReturnToOrRedirect: '/',
     failWithError: true
   });
