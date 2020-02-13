@@ -14,6 +14,6 @@ function parseQuery(url) {
     return queryObj;
 }
  
-console.log(parseQuery("https://github.com/login?client_id=Iv1.fcfd34a22b3237ac&return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3DIv1.fcfd34a22b3237ac%26redirect_uri%3Dhttp%253A%252F%252F127.0.0.1%253A7001%252Fpassport%252Fgithub%252Fcallback%26response_type%3Dcode"));
+console.log(parseQuery("https://avatars1.githubusercontent.com/u/22697565?v=4&s=120"));
 
 ```

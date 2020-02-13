@@ -7,7 +7,7 @@ module.exports = appInfo => {
   config.name = "前端社区";
 
   config.description =
-    "国内比较专业、具影响力的前端技术交流社区,致力于前端技术的研究与探讨。";
+    "国内比较专业、具有影响力的前端交流社区,致力于前端技术的研究与探讨。";
 
   config.site_logo = "";
 
@@ -55,8 +55,8 @@ module.exports = appInfo => {
         ["tech", "技术交流"],
         ["work", "工作吐槽"],
         ["freetime", "上班摸鱼"],
-        ["infer", "交友相亲"],
         ["life", "生活相关"],
+        ["infer", "交友相亲"],
         ["parttime", "兼职外包"],
         ["feedback", "反馈与帮助"],
         ["other", "其他"],

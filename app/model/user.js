@@ -50,7 +50,7 @@ module.exports = app => {
   UserSchema.index({ githubId: 1 });
   UserSchema.index({ accessToken: 1 });
 
-  UserSchema.virtual('avatar_url').get(function() {
+  UserSchema.virtual('avatar_url').get(function () {
     let url =
       this.avatar ||
       '//cdn.58fe.com/avatar/1.png';
@@ -63,17 +63,21 @@ module.exports = app => {
     // 如果是 github 的头像，则限制大小
     if (url.indexOf('githubusercontent') !== -1) {
       url += '&s=120';
+      // let arrurl = url.split('/');
+      // let hostname = 'https://' + arrurl[2];
+      // url = url.replace(hostname, 'https://avatars2.githubusercontent.com')
+      // url = 'https://avatars2.githubusercontent.com/' + domain[3]
     }
 
     return url;
   });
 
-  UserSchema.virtual('isAdvanced').get(function() {
+  UserSchema.virtual('isAdvanced').get(function () {
     // 积分高于 700 则认为是高级用户
     return this.score > 700 || this.is_star;
   });
 
-  UserSchema.pre('save', function(next) {
+  UserSchema.pre('save', function (next) {
     const now = new Date();
     this.update_at = now;
     next();

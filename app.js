@@ -8,6 +8,7 @@ module.exports = app => {
   }
 
   const localHandler = async (ctx, { username, password }) => {
+  
     const getUser = username => {
       if (username.indexOf('@') > 0) {
         return ctx.service.user.getUserByMail(username);
@@ -18,10 +19,7 @@ module.exports = app => {
 
     // 用户不存在
     if (!existUser) {
-      ctx.status = 422;
-      ctx.render("sign/signin", {
-        error: "用户不存在。"
-      });
+      // done("Incorrect login or password")
       return null;
     }
 

@@ -40,7 +40,8 @@ module.exports = app => {
     // 进行github验证
     router.redirect("/signup", "/passport/github");
   }
-
+  // 鉴权成功后的回调页面
+  // router.get('/authCallback', controller.home.authCallback);
   const localStrategy = app.passport.authenticate("local", {
     successRedirect: "/",
     failureRedirect: "/signin",

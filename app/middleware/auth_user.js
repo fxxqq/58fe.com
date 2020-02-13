@@ -2,7 +2,7 @@
 
 module.exports = () => {
   // 验证用户是否登录
-  return async function(ctx, next) {
+  return async function (ctx, next) {
     // Ensure current_user always has defined.
     ctx.locals.current_user = null;
     // if (ctx.app.config.debug && ctx.cookies.get('mock_user')) {
@@ -23,6 +23,7 @@ module.exports = () => {
     const count = await ctx.service.message.getMessagesCount(user._id);
     user.messages_count = count;
     ctx.locals.current_user = user;
+    
     await next();
   };
 };
