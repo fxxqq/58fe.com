@@ -8,7 +8,7 @@ module.exports = app => {
   }
 
   const localHandler = async (ctx, { username, password }) => {
-  
+
     const getUser = username => {
       if (username.indexOf('@') > 0) {
         return ctx.service.user.getUserByMail(username);
@@ -109,13 +109,14 @@ module.exports = app => {
 
     return existUser;
   };
-  app.passport.verify(async (ctx, user) => {
+  app.passport.verify(async (ctx, user, done) => {
+    console.log("ctx", ctx)
     ctx.logger.debug('passport.verify', user);
     // const handler = user.provider === 'github' ? githubHandler : localHandler;
     let handler;
     switch (user.provider) {
       case 'local':
-        ctx = app.createAnonymousContext();
+     
         handler = localHandler;
         break;
       case 'github':
