@@ -1,5 +1,5 @@
 'use strict';
-
+const utility = require("utility");
 const uuid = require('uuid');
 
 module.exports = app => {
@@ -19,6 +19,7 @@ module.exports = app => {
 
     // 用户不存在
     if (!existUser) {
+      console.log("ctx.body", ctx.body)
       // done("Incorrect login or password")
       return null;
     }
@@ -28,12 +29,20 @@ module.exports = app => {
     const equal = ctx.helper.bcompare(password, passhash);
     // 密码不匹配
     if (!equal) {
+
       return null;
     }
 
     // 用户未激活
     if (!existUser.active) {
+      let { loginname, email } = existUser
+
       // 发送激活邮件
+      await ctx.service.mail.sendActiveMail(
+        email,
+        utility.md5(email + passhash + app.config.session_secret),
+        loginname
+      );
       return null;
     }
 
@@ -110,13 +119,12 @@ module.exports = app => {
     return existUser;
   };
   app.passport.verify(async (ctx, user, done) => {
-    console.log("ctx", ctx)
+
     ctx.logger.debug('passport.verify', user);
     // const handler = user.provider === 'github' ? githubHandler : localHandler;
     let handler;
     switch (user.provider) {
       case 'local':
-     
         handler = localHandler;
         break;
       case 'github':

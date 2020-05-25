@@ -49,9 +49,9 @@ module.exports = app => {
   });
 
   router.get("/signin", sign.showLogin); // 进入登录页面
-  router.post("/passport/local", localStrategy);
-  router.get("/signfail", sign.signin); // 登录校验
-
+  router.post("/signin", sign.signin);
+ 
+  // router.post("/passport/local", localStrategy);
   router.all("/signout", sign.signout); // 登出
   router.get("/active_account", sign.activeAccount); // 帐号激活
 

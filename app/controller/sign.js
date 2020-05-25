@@ -8,7 +8,9 @@ const Controller = require("egg").Controller;
 class SignController extends Controller {
   async showLogin() {
     const { ctx } = this;
+
     await ctx.render("/sign/signin", { pageTitle: "登录" });
+
   }
   //用户名或者邮箱登陆
   async signin() {
@@ -24,7 +26,7 @@ class SignController extends Controller {
       return ctx.service.user.getUserByLoginName(username);
     };
     const existUser = await getUser(username);
-    console.log("登陆失败", username, ctx.request.body)
+    // console.log("登陆失败", username, ctx.request.body)
 
     // 用户不存在
     if (!existUser) {
@@ -64,15 +66,20 @@ class SignController extends Controller {
       });
       return null;
     }
-    passport.authenticate("local", {
-      successRedirect: "/",
-      failureRedirect: "/signin",
-      failureFlash: true
-    });
-
+    if (existUser) {
+      // id存入Cookie, 用于验证过期.
+      const auth_token = existUser._id + '$$$$'; // 以后可能会存储更多信息，用 $$$$ 来分隔
+      const opts = {
+        path: '/',
+        maxAge: 1000 * 60 * 60 * 24 * 365,
+        signed: true,
+        httpOnly: true,
+      };
+      ctx.cookies.set(config.auth_cookie_name, auth_token, opts); // cookie 有效期30天
+    }
 
   }
-  // sign up
+ 
   async showSignup() {
     const { ctx } = this;
     await ctx.render("/sign/signup", { pageTitle: "注册" });
@@ -155,10 +162,6 @@ class SignController extends Controller {
         "！我们已给您的注册邮箱发送了一封邮件，请点击里面的链接来激活您的帐号。"
     });
 
-    app.passport.authenticate("local", {
-      successRedirect: "/",
-      failureRedirect: "/signin",
-    });
   }
 
   async signout() {

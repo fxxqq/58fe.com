@@ -2,7 +2,7 @@
 
 module.exports = (option, app) => {
   // 中间件的配置项，框架会将 app.config[${middlewareName}] 传递进来
-  return async function(ctx, next) {
+  return async function (ctx, next) {
     try {
       await next();
     } catch (err) {
